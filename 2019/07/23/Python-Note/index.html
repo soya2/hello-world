@@ -1,307 +1,42 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Python_Note | Silence</title><meta name="description" content="Python_Note"><meta name="keywords" content="Python"><meta name="author" content="Soya-Kelaos"><meta name="copyright" content="Soya-Kelaos"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/Logo-1.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="canonical" href="soya2.github.io/2019/07/23/Python-Note/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Python_Note"><meta name="twitter:description" content="Python_Note"><meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922348153&amp;di=b5beb01f51b8c1395aca1eb594d1e0b9&amp;imgtype=0&amp;src=http%3A%2F%2Fs5.51cto.com%2Fwyfs02%2FM01%2F91%2FF2%2FwKiom1j5pJ6xJ2G_AABf_18cP4g110.jpg-wh_651x-s_3271416344.jpg"><meta property="og:type" content="article"><meta property="og:title" content="Python_Note"><meta property="og:url" content="soya2.github.io/2019/07/23/Python-Note/"><meta property="og:site_name" content="Silence"><meta property="og:description" content="Python_Note"><meta property="og:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922348153&amp;di=b5beb01f51b8c1395aca1eb594d1e0b9&amp;imgtype=0&amp;src=http%3A%2F%2Fs5.51cto.com%2Fwyfs02%2FM01%2F91%2FF2%2FwKiom1j5pJ6xJ2G_AABf_18cP4g110.jpg-wh_651x-s_3271416344.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="prev" title="Java的一些前置工作" href="/soya2.github.io/2019/07/26/Java-config/"><link rel="next" title="C语言100题相关解题思路(部分)" href="/soya2.github.io/2019/07/22/Frist-Artical/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Bookmark',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days'
 
-<head><meta name="generator" content="Hexo 3.9.0">
-	<link rel="bookmark" type="image/x-icon" href="/img/Logo-1.png">
-	<link rel="shortcut icon" href="/img/Logo-1.png">
-	
-			    <title>
-    Silence
-    </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/css/mic_main.css">
-    <link rel="stylesheet" href="/css/dropdownMenu.css">
-    <meta name="keywords" content="Silence">
-    
-    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	 
-    <noscript>
-        <link rel="stylesheet" href="/css/noscript.css">
-    </noscript>
-    <style type="text/css">
-        body:before {
-          content: ' ';
-          position: fixed;
-          top: 0;
-          background: url('/img/WallPaper.jpg') center 0 no-repeat;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-size: cover; 
-        }
-    </style>
-
-			    
   
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.scrollex.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script>
-	
-</head>
-    
-		
-<!-- Layouts -->
-
-
-
-<!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_okaidia.css">
-<link rel="stylesheet" href="/css/typo.css">
-<!-- 文章页 -->
-<body class="is-loading">
-    <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
-        <!-- Intro 头部显示 s -->
-        <!-- Intro 头部显示 e -->
-        <!-- Header 头部logo start -->
-        <header id="header">
-    <a href="/" class="logo">Silence</a>
-</header>
-        <!-- Nav 导航条 start -->
-        <nav id="nav" class="special">
-            <ul class="menu links">
-			<!-- Homepage  主页  --> 
-			<li>
-	            <a href="/" rel="nofollow">主页</a>
-	        </li>
-			<!-- categories_name  分类   --> 
-	        
-	        <li class="active">
-	            <a href="#s1">分类</a>
-	                    <ul class="submenu">
-	                        <li>
-	                        
-	                    </li></ul>
-	        </li>
-	        
-	        <!-- archives  归档   --> 
-	        
-	        
-		        <!-- Pages 自定义   -->
-		        
-
-
-            </ul>
-            <!-- icons 图标   -->
-			<ul class="icons">
-                    
-                    <li>
-                        <a title="github" href="https://github.com/soya2" target="_blank" rel="noopener">
-                            <i class="icon fa fa-github"></i>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a title="twitter" href="http://twitter.com/soooooya2" target="_blank" rel="noopener">
-                            <i class="icon fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    
-			</ul>
-</nav>
-
-        <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922348153&amp;di=b5beb01f51b8c1395aca1eb594d1e0b9&amp;imgtype=0&amp;src=http%3A%2F%2Fs5.51cto.com%2Fwyfs02%2FM01%2F91%2FF2%2FwKiom1j5pJ6xJ2G_AABf_18cP4g110.jpg-wh_651x-s_3271416344.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Python_Note</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h3 id="与C语言的一些区别"><a href="#与C语言的一些区别" class="headerlink" title="与C语言的一些区别"></a>与C语言的一些区别</h3><p>代码<strong>行首</strong>不要随意插入空格，空格在python中具有缩进含义<br>    缩进在python中表示的是程序的分割<br>    C中是用大括号{}来分割程序,如:<br>    <pre><code>for(int i=0;i&lt;=10;i++)
-{
-   printf(&quot;Hello World!\n&quot;);
-   printf(&quot;%d\n&quot;,1+2);
-}</code></pre><br>    而python中仅仅用缩进表示,如:<br>    <pre><code>for i in range(10)
-    print(&quot;Hello World!\n&quot;)
- 	print(i)
-#若代码为,如:
-for i in range(10)
-    print(&quot;Hello World!\n&quot;)
- print(i)
- </code></pre><br>则此时print(i)就不属于for循环中的代码<br>以及一行命令结束后不必用分号声明结束<br>同样是中文字符会报错</p>
+}</script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#与C语言的一些区别"><span class="toc-text">与C语言的一些区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-text">注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于变量"><span class="toc-text">关于变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字符串"><span class="toc-text">字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#列表、元组、字典"><span class="toc-text">列表、元组、字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#循环"><span class="toc-text">循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数"><span class="toc-text">函数</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922348153&amp;di=b5beb01f51b8c1395aca1eb594d1e0b9&amp;imgtype=0&amp;src=http%3A%2F%2Fs5.51cto.com%2Fwyfs02%2FM01%2F91%2FF2%2FwKiom1j5pJ6xJ2G_AABf_18cP4g110.jpg-wh_651x-s_3271416344.jpg)"><div id="page-header"><span class="pull-left"> <a class="blog_title" id="site-name" href="/">Silence</a></span><div class="open toggle-menu pull-right"><div class="menu-icon-first"></div><div class="menu-icon-second"></div><div class="menu-icon-third"></div></div><span class="pull-right menus"><div class="mobile_author_icon"><img class="lozad" data-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'"><div class="mobile_author-info__description">联系唯一邮箱：soya-kelaos@outlook.com</div></div><hr><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-主页"></i><span> Home</span></a><a class="site-page" href="/archives/"><i class="fa-fw fa fa-时间线"></i><span> Archives</span></a><a class="site-page" href="/tags/"><i class="fa-fw fa fa-标签"></i><span> Tags</span></a><a class="site-page" href="/about/"><i class="fa-fw fa 关于"></i><span> About</span></a><script>document.body.addEventListener('touchstart', function(){ });</script></div></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title"><div class="posttitle">Python_Note</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2019-07-23<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2019-08-04</time></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h3 id="与C语言的一些区别"><a href="#与C语言的一些区别" class="headerlink" title="与C语言的一些区别"></a>与C语言的一些区别</h3><p>代码<strong>行首</strong>不要随意插入空格，空格在python中具有缩进含义<br>    缩进在python中表示的是程序的分割<br>    C中是用大括号{}来分割程序,如:<br>    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(int i=<span class="number">0</span>;i&lt;=<span class="number">10</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">   printf(<span class="string">"Hello World!\n"</span>);</span><br><span class="line">   printf(<span class="string">"%d\n"</span>,<span class="number">1</span>+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>    而python中仅仅用缩进表示,如:<br>    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>)</span><br><span class="line">    print(<span class="string">"Hello World!\n"</span>)</span><br><span class="line"> 	print(i)</span><br><span class="line"><span class="comment">#若代码为,如:</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>)</span><br><span class="line">    print(<span class="string">"Hello World!\n"</span>)</span><br><span class="line"> print(i)</span><br><span class="line"> </span><br></pre></td></tr></table></figure><br>则此时print(i)就不属于for循环中的代码<br>以及一行命令结束后不必用分号声明结束<br>同样是中文字符会报错</p>
 <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>-#为行注释<br>-‘’’此为<br>段注释<br>以三个分号来声明<br>‘’’</p>
 <h3 id="关于变量"><a href="#关于变量" class="headerlink" title="关于变量"></a>关于变量</h3><p>变量在声明和定义时不用有类似于int char等数据类型声明，直接将对象的地址赋值给变量如a = 1<br>python中可以删除变量，进行<br>    del a<br>的操作后将a从栈中删除，变量是存储在栈中的，而对象”1”则是存储在堆中的，将a删除后对象”1”仍然存在，但没人使用后会被垃圾回收器删除(删除的实际时间待补充)<br>和c相同可以采用链式赋值法<br>    如 a=b=22<br>这样a和b的值都是22<br>注意，声明变量时，值为[-5，256]区间内的值会被python解释器缓存起来，这样不论时什么变量指向这个对象，都是同一个对象，并不是生成一个新的对象。可用is()  is not()函数验证，这两个函数分别判断两个标识符是否为一个对象和是否不是为一个对象<br>也可采用解包赋值，形如<br>    a,b = b,a<br>意味着a和b的变量互换了，不必在代码中加一个中间变量temp参与互换<br>同时注意，<strong>Python不支持常量</strong></p>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>+、-、<em>和c语言相同<br>但由于Python不声明数据类型，所以在除法上有区别<br>如a = 2/3采用浮点计算，就是会将得出的结果保留小数，和float数据类型一样，此时a=0.66..67<br>若采用a = 2//3就是采用整型计算，意味着不保留小数，此时a=0<br>%同样为取模(余数)，但注意+、-、</em>的两者分别是整型和浮点型时默认为浮点型数据计算<br>双星号为幂</p>
-<pre><code>a = 2**3 #**</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">2</span>**<span class="number">3</span> <span class="comment">#**</span></span><br></pre></td></tr></table></figure>
 <p>就是2的三次方，此时a=8<br>关于科学计数法如3.14就表示为”314E-2”，意为314×10^(-2)<br>注意双斜杠’//‘在C语言中表示注释，在Python中表示整型除法计算</p>
 <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>python中没有单个字符的概念，只有字符串或者是单个字符的字符串<br>在声明字符串的时候既可以用单引号，也可用双引号<br>形如a = “abc”  a = ‘abc’  都是合法的，这样子可以对一个字符串中同时出现单引号和双引号的情况作临时的解决，并且字符串中支持换行，只要连续三个单引号或双引号就可以在中间换行。<br>例如a = ‘’’abc<br>def<br>“ghi”’’’<br>合法，中间有双引号时也不会冲突，如果还有冲突，就使用转移字符/‘和/“来解决<br>对于字符串也可以使用+、-、<em>来操作，但要注意，+、-时两者必须同为字符串</em><br>在使用print()函数时可采用加一个end来改变要增加的字符(默认为\n)<br>例如 print(“abc”,end=”\t”)<br>在python中使用input()函数来输入</p>
-<pre><code>&gt;&gt;&gt; name=input(&quot;please input your name:&quot;)
-please input your name:soya
-&gt;&gt;&gt; print(&quot;Hello，&quot;+name)
-Hello，soya</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name=input(<span class="string">"please input your name:"</span>)</span><br><span class="line">please input your name:soya</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">"Hello，"</span>+name)</span><br><span class="line">Hello，soya</span><br></pre></td></tr></table></figure>
 <p>同样可以利用str()函数把数字、布尔值等转为字符串<br>类似于数组的下标，字符串也有索引，和下标相同，正向时是从0开始，但Python还可以使用反向搜索</p>
-<pre><code>&gt;&gt;&gt; c = &quot;asdfbd&quot;
-&gt;&gt;&gt; c[0]
-&#39;a&#39;
-&gt;&gt;&gt; c[-1]   #从-1开始倒数就是从最后一个字符到第一个字符，注意不是0开始
-&#39;d&#39;
-字符串替换
-&gt;&gt;&gt; c.replace(&quot;a&quot;,&quot;5&quot;)
-&#39;5sdfbd&#39;
-&gt;&gt;&gt; c
-&#39;asdfbd&#39;    #这里意为着是创建了一个新的对象，但如果没有指向一个变量那就不会被引用
-&gt;&gt;&gt; c=c.replace(&quot;a&quot;,&quot;5&quot;)    #此为利用原来的变量重新指向新创建的字符串
-&gt;&gt;&gt; c
-&#39;5sdfbd&#39;
-提取字符串中的部分字符
-&gt;&gt;&gt; c[1:5]    #意为着从下标1&#39;s&#39;开始提取到下标5&#39;d&#39;之间的字符，注意不包含第五个(超出)
-&#39;sdfb&#39;
-&gt;&gt;&gt; c[:]    #提取全部字符
-&#39;5sdfbd&#39;
-&gt;&gt;&gt; c[0:5:2]    #第三个参数表示步长，2表示隔一个提取一个(每两个提取一个)
-&#39;5db&#39;
-&gt;&gt;&gt; c[::-1]    #表示每隔-1个提取一个(可以理解为每隔一个提取一个，但是是倒序提取)
-&#39;dbfds5&#39;</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="string">"asdfbd"</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[<span class="number">0</span>]</span><br><span class="line"><span class="string">'a'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[<span class="number">-1</span>]   <span class="comment">#从-1开始倒数就是从最后一个字符到第一个字符，注意不是0开始</span></span><br><span class="line"><span class="string">'d'</span></span><br><span class="line">字符串替换</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c.replace(<span class="string">"a"</span>,<span class="string">"5"</span>)</span><br><span class="line"><span class="string">'5sdfbd'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="string">'asdfbd'</span>    <span class="comment">#这里意为着是创建了一个新的对象，但如果没有指向一个变量那就不会被引用</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c=c.replace(<span class="string">"a"</span>,<span class="string">"5"</span>)    <span class="comment">#此为利用原来的变量重新指向新创建的字符串</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c</span><br><span class="line"><span class="string">'5sdfbd'</span></span><br><span class="line">提取字符串中的部分字符</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[<span class="number">1</span>:<span class="number">5</span>]    <span class="comment">#意为着从下标1's'开始提取到下标5'd'之间的字符，注意不包含第五个(超出)</span></span><br><span class="line"><span class="string">'sdfb'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[:]    <span class="comment">#提取全部字符</span></span><br><span class="line"><span class="string">'5sdfbd'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[<span class="number">0</span>:<span class="number">5</span>:<span class="number">2</span>]    <span class="comment">#第三个参数表示步长，2表示隔一个提取一个(每两个提取一个)</span></span><br><span class="line"><span class="string">'5db'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c[::<span class="number">-1</span>]    <span class="comment">#表示每隔-1个提取一个(可以理解为每隔一个提取一个，但是是倒序提取)</span></span><br><span class="line"><span class="string">'dbfds5'</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="列表、元组、字典"><a href="#列表、元组、字典" class="headerlink" title="列表、元组、字典"></a>列表、元组、字典</h3><p>三者的创建有一些区别</p>
-<pre><code>&gt;&gt;&gt; a = [ 10, 20, 30]  #列表方括号，或以list()创建
-&gt;&gt;&gt; b = ( 10, 20, 30)  #元组小括号，或以tuple()创建
-&gt;&gt;&gt; c = { &quot;one&quot;:10, &quot;two&quot;:20, &quot;three&quot;:30}  #字典花括号，或以dict()创建</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [ <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>]  <span class="comment">#列表方括号，或以list()创建</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = ( <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>)  <span class="comment">#元组小括号，或以tuple()创建</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = &#123; <span class="string">"one"</span>:<span class="number">10</span>, <span class="string">"two"</span>:<span class="number">20</span>, <span class="string">"three"</span>:<span class="number">30</span>&#125;  <span class="comment">#字典花括号，或以dict()创建</span></span><br></pre></td></tr></table></figure>
 <p>三者的操作集合在需要使用的时候再查询，不必背诵<br>变量段落中的解包赋值对它们同样有效<br>三者都可以通过推导式来生成，即在声明的时候加入循环，运算和筛选，例</p>
-<pre><code>y = [x*2 for x in range(1,5) if x%2==0]   #意为生成一个1-4的列表，随后筛选出能被2整除的数，最后乘2得出最后的列表
-&gt;&gt;&gt; [4,8]	#*</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y = [x*<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">5</span>) <span class="keyword">if</span> x%<span class="number">2</span>==<span class="number">0</span>]   <span class="comment">#意为生成一个1-4的列表，随后筛选出能被2整除的数，最后乘2得出最后的列表</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">4</span>,<span class="number">8</span>]	<span class="comment">#*</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><p>while()和for()循环都和C类似，有几个新特性值得记下来。<br>python中循环也可以加else判断，条件是循环没有被break中断的就执行else语句(即正常结束循环就执行)<br>for循环中可以使用zip()函数达到几个列表并列循环的效果<br>例如</p>
-<pre><code>a = [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;]
-b = [1,2,3]
-c = [&quot;!&quot;,&quot;@&quot;]
-
-for a1,b1,c1 in zip(a,b,c):    #前面的名字和列表名字不能相同，与变量i同理
-    print(&quot;{0},{1},{2}&quot;.format(a1,b1,c1))
-
-&gt;&gt;&gt; 
-A,1,!
-B,2,@</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="string">"A"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>]</span><br><span class="line">b = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">c = [<span class="string">"!"</span>,<span class="string">"@"</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> a1,b1,c1 <span class="keyword">in</span> zip(a,b,c):    <span class="comment">#前面的名字和列表名字不能相同，与变量i同理</span></span><br><span class="line">    print(<span class="string">"&#123;0&#125;,&#123;1&#125;,&#123;2&#125;"</span>.format(a1,b1,c1))</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line">A,<span class="number">1</span>,!</span><br><span class="line">B,<span class="number">2</span>,@</span><br></pre></td></tr></table></figure>
 <p>需要理解的是for在python中不仅仅是循环，而是更接近于“遍历”，所以不必局限于循环次数，而是根据列表来进行遍历，这里意味着同时对a，b，c进行遍历。要注意，当次数不相同时按最短列表遍历次数，如例子中a，和b的长度都是3，c是2，就循环两次</p>
 <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>与C相同，函数的返回值只能返回一个。但不同的是，python可以返回一个对象，这意味着能把多个值放在列表中返回，以达到返回多个值的效果(但本质还是只返回一个对象)</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Soya-Kelaos</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="/soya2.github.io/2019/07/23/Python-Note/">soya2.github.io/2019/07/23/Python-Note/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python    </a></div><div class="post_share"><div class="social-share" data-image="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922348153&amp;di=b5beb01f51b8c1395aca1eb594d1e0b9&amp;imgtype=0&amp;src=http%3A%2F%2Fs5.51cto.com%2Fwyfs02%2FM01%2F91%2FF2%2FwKiom1j5pJ6xJ2G_AABf_18cP4g110.jpg-wh_651x-s_3271416344.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull-left"><a href="/2019/07/26/Java-config/"><img class="prev_cover lozad" data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922206991&amp;di=a0f60ac3b736bdc9270285c6b053d968&amp;imgtype=0&amp;src=http%3A%2F%2Fs10.sinaimg.cn%2Fmw690%2F006WSKIczy7eYGVqarT69%26690" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>Java的一些前置工作</span></div></a></div><div class="next-post pull-right"><a href="/2019/07/22/Frist-Artical/"><img class="next_cover lozad" data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564921890729&amp;di=40bccfe5ac08221ec7900c10cb3387e4&amp;imgtype=0&amp;src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F5d6e21dfa0289632e226903bc1fea0fee2ddf7d0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>C语言100题相关解题思路(部分)</span></div></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 By Soya-Kelaos</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><section class="rightside" id="rightside"><i class="fa fa-book" id="readmode" title="Read Mode"> </i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion">繁</a><i class="fa fa-moon-o nightshift" id="nightshift" title="Dark Mode"></i></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/nightshift.js"></script><script id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zindex="-1" data-click="false"></script><script id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/js/piao.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
 
-            </div>
-
-            <!-- Post Comments -->
-            
-    <!-- 使用 DISQUS_CLICK -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
-
-<!-- add animation -->
-<style>
-	.disqus_click_btn {
-            line-height: 30px;
-            margin: 0;
-            min-width: 50px;
-            padding: 0 14px;
-            display: inline-block;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0;
-            overflow: hidden;
-            will-change: box-shadow;
-            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
-            outline: 0;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            vertical-align: middle;
-            border: 0;
-            background: rgba(158, 158, 158, .2);
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-            color: #fff;
-            background-color: #7EC0EE;
-            text-shadow: 0
-        }
-</style>
-	
-<div class="btn_click_load" id="disqus_bt"> 
-    <button class="disqus_click_btn">点击查看评论</button>
-</div>
-
-<!--
-<script type="text/javascript">
-$('.btn_click_load').click(function() {
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    document.getElementById('disqus_bt').style.display = "none";
-});
-</script>
--->
-<script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'soya2.github.io/2019/07/23/Python-Note/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'soya2.github.io/2019/07/23/Python-Note/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-
-<script type="text/javascript">
-    $('.btn_click_load').click(function() {  //click to load comments
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document;
-            var s = d.createElement('script');
-            s.src = '//http-miccall-tech.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', + new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-        $('.btn_click_load').css('display','none');
-    });
-</script>
-</div>
-<style>
-    #disqus-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-
-
-        </div>
-        <!-- Copyright 版权 start -->
-                <div id="copyright">
-            <ul>
-                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
-                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
-            </ul>
-            
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-			
-        </div>
-    </div>
-</body>
-
-
-
- 	
-</html>
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@1.2.2/instantpage.min.js" type="module"></script></body></html>
