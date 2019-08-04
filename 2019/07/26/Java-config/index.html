@@ -105,12 +105,6 @@
 	        
 		        <!-- Pages 自定义   -->
 		        
-		        <li>
-		            <a href="/tag/" title="标签">
-		                标签
-		            </a>
-		        </li>
-		        
 
 
             </ul>
@@ -133,24 +127,24 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564922206991&amp;di=a0f60ac3b736bdc9270285c6b053d968&amp;imgtype=0&amp;src=http%3A%2F%2Fs10.sinaimg.cn%2Fmw690%2F006WSKIczy7eYGVqarT69%26690);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Java的一些前置工作</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h3 id="必备下载"><a href="#必备下载" class="headerlink" title="必备下载"></a>必备下载</h3><p>首先要先下载<strong>JDK</strong>，它是Java开发的软件工具包，是必要的文件，请先下载这个：<br>Java SE Downloads: (<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a>)<br>点击网页中央下方有”Java Platform (JDK) 12”描述的的方块图形，然后在下方的这个区域点击涂黄的部分，然后下载<br><strong>*”Windows 158.63 MB jdk-12.0.2_windows-x64_bin.exe”*</strong><br>或者<br><strong>*”Windows 179.57 MB jdk-12.0.2_windows-x64_bin.zip”*</strong>中的其中一个,随后安装即可。</p>
+                <h3 id="必备下载"><a href="#必备下载" class="headerlink" title="必备下载"></a>必备下载</h3><p>首先是<strong>JDK</strong>，它是Java开发的软件工具包，是必要的文件，请先下载这个：<br>Java SE Downloads: (<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a>)<br>点击网页中央下方有”Java Platform (JDK) 12”描述的的方块图形，然后在下方的这个区域点击涂黄的部分，然后下载<br><strong>“Windows 158.63 MB jdk-12.0.2_windows-x64_bin.exe”</strong><br>或者<br><strong>“Windows 179.57 MB jdk-12.0.2_windows-x64_bin.zip”</strong>中的其中一个,随后安装即可。</p>
 
 
 <h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><p>按操作依次打开窗口；<br>控制面板中的系统，然后点击左侧涂色的<em>高级系统设置</em></p>
 
 <p>随后在弹出的”高级”选项卡中的最下方点击涂色的<em>环境变量</em></p>
 
-<p>然后打开的窗口分为用户变量和系统变量上下两个部分，首先对系统变量部分进行操作；首先查看变量中是否有名为<strong>*”JAVA_HOME”*</strong>的变量，如果没有就点击新建按钮，若有请点击编辑按钮。变量名填写为<strong>*”JAVA_HOME”*</strong>，变量值填写为<em>你安装JDK*</em>文件夹*<em>的位置</em>，点击确定。</p>
+<p>然后打开的窗口分为用户变量和系统变量上下两个部分，首先对系统变量部分进行操作；首先查看变量中是否有名为<strong>“JAVA_HOME”</strong>的变量，如果没有就点击新建按钮，若有请点击编辑按钮。变量名填写为<strong>“JAVA_HOME”</strong>，变量值填写为你安装JDK<strong>文件夹</strong>的位置，点击确定。</p>
 
-<p>之后对用户变量进行操作，选择<strong><em>Path变量</em></strong>后点击编辑，新建两个变量值<br><strong><em>%JAVA_HOME%\bin</em></strong><br><strong><em>%JAVA_HOME%\jre\bin</em></strong><br>点击确定。</p>
+<p>之后对用户变量进行操作，选择<strong>Path变量</strong>后点击编辑，新建两个变量值<br><strong>%JAVA_HOME%\bin</strong><br><strong>%JAVA_HOME%\jre\bin</strong><br>点击确定。</p>
 
 
-<p>变量设置完成后，启动CMD直接输入<em>java -version<em>或者</em>java*均有反应，而不是</em>“‘java’ 不是内部或外部命令，也不是可运行的程序”*即可。<br>正确配置后的反应为</p>
+<p>变量设置完成后，启动CMD直接输入<strong>java -version</strong>或者<strong>java</strong>应该都有反应，<br>不是<strong>“‘java’ 不是内部或外部命令，也不是可运行的程序”</strong>即可。<br>正确配置后的反应为</p>
 
 
 
