@@ -1,3 +1,212 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Soya"><title>数据结构概念习题综合 · 恰恰书库</title><meta name="description" content="二叉树部分树的概念及性质等二叉树操作集合及习题函数12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667"><meta name="keywords" content><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Typography</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">活版印字</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li><a href="/about/index.html">about</a></li><li class="soc"><a href="soya2.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="soya2.github.io" rel="noopener noreferrer">Soya</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>数据结构概念习题综合</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2020-04-16</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/数据结构/" title="数据结构" class="a-tag">数据结构</a><span>&nbsp;</span></span></p><p class="post-abstract"></p><h3 id="二叉树部分"><a href="#二叉树部分" class="headerlink" title="二叉树部分"></a>二叉树部分</h3><h4 id="树的概念及性质等"><a href="#树的概念及性质等" class="headerlink" title="树的概念及性质等"></a>树的概念及性质等</h4><h4 id="二叉树操作集合及习题函数"><a href="#二叉树操作集合及习题函数" class="headerlink" title="二叉树操作集合及习题函数"></a>二叉树操作集合及习题函数</h4><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#include <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#include <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#define DataType int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> Node&#123;</span><br><span class="line">	DataType data;</span><br><span class="line">	<span class="keyword">struct</span> Node *LChild, *RChild;</span><br><span class="line">	<span class="comment">//struct Node *Parent;</span></span><br><span class="line">&#125;BiTree;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> CreateBitree(BiTree **T)<span class="comment">//静态生成二叉树</span></span><br><span class="line">&#123;</span><br><span class="line">	*T = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	(*T)-&gt;data = <span class="number">1</span>;</span><br><span class="line">	(*T)-&gt;LChild = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	(*T)-&gt;RChild = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line"></span><br><span class="line">	(*T)-&gt;LChild-&gt;data = <span class="number">2</span>;</span><br><span class="line">	(*T)-&gt;LChild-&gt;LChild = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	(*T)-&gt;LChild-&gt;LChild-&gt;data = <span class="number">4</span>;</span><br><span class="line">	(*T)-&gt;LChild-&gt;RChild = (*T)-&gt;LChild-&gt;LChild-&gt;LChild = (*T)-&gt;LChild-&gt;LChild-&gt;RChild = <span class="literal">NULL</span>;</span><br><span class="line">	</span><br><span class="line">	(*T)-&gt;RChild-&gt;data = <span class="number">3</span>;</span><br><span class="line">	(*T)-&gt;RChild-&gt;LChild = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	(*T)-&gt;RChild-&gt;LChild-&gt;data = <span class="number">5</span>;</span><br><span class="line">	(*T)-&gt;RChild-&gt;LChild-&gt;LChild = (*T)-&gt;RChild-&gt;LChild-&gt;RChild = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">	(*T)-&gt;RChild-&gt;RChild = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	(*T)-&gt;RChild-&gt;RChild-&gt;data = <span class="number">6</span>;</span><br><span class="line">	(*T)-&gt;RChild-&gt;RChild-&gt;LChild = (*T)-&gt;RChild-&gt;RChild-&gt;RChild = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BiTree *InsterBitreeLeftNode(BiTree *T, DataType x)<span class="comment">//插入新左子树</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	BiTree *orileft = T-&gt;LChild;<span class="comment">//先保存原有子树</span></span><br><span class="line">	BiTree *newleft = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	newleft-&gt;data = x;</span><br><span class="line">	newleft-&gt;LChild = orileft;</span><br><span class="line">	newleft-&gt;RChild = <span class="literal">NULL</span>;<span class="comment">//创建新子树并赋值</span></span><br><span class="line">	T-&gt;LChild = newleft;<span class="comment">//接回原有二叉树</span></span><br><span class="line">	<span class="keyword">return</span> T-&gt;LChild; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BiTree *InsterBitreeRightNode(BiTree *T, DataType x)<span class="comment">//插入新右子树</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T == <span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	BiTree *oriright = T-&gt;RChild;<span class="comment">//先保存原有子树</span></span><br><span class="line">	BiTree *newright = (BiTree *)malloc(<span class="keyword">sizeof</span>(BiTree));</span><br><span class="line">	newright-&gt;data = x;</span><br><span class="line">	newright-&gt;RChild = oriright;</span><br><span class="line">	newright-&gt;LChild = <span class="literal">NULL</span>;<span class="comment">//创建新子树并赋值</span></span><br><span class="line">	T-&gt;RChild = newright;<span class="comment">//接回原有二叉树</span></span><br><span class="line">	<span class="keyword">return</span> T-&gt;RChild; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> PreOrderTraverse(BiTree *T)<span class="comment">//先序遍历</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(<span class="string">"%d\t"</span>,T-&gt;data);</span><br><span class="line">		PreOrderTraverse(T-&gt;LChild);</span><br><span class="line">		PreOrderTraverse(T-&gt;RChild);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> InOrderTraverse(BiTree *T)<span class="comment">//中序遍历</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T)</span><br><span class="line">	&#123;</span><br><span class="line">		InOrderTraverse(T-&gt;LChild);</span><br><span class="line">		printf(<span class="string">"%d\t"</span>,T-&gt;data);</span><br><span class="line">		InOrderTraverse(T-&gt;RChild);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> PostOrderTraverse(BiTree *T)<span class="comment">//后序遍历</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T)</span><br><span class="line">	&#123;</span><br><span class="line">		PostOrderTraverse(T-&gt;LChild);</span><br><span class="line">		PostOrderTraverse(T-&gt;RChild);</span><br><span class="line">		printf(<span class="string">"%d\t"</span>,T-&gt;data);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> PrintBiTree(BiTree *T,<span class="keyword">int</span> inden)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T==<span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	PrintBiTree(T-&gt;RChild,inden+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;inden;i++)</span><br><span class="line">		printf(<span class="string">"\t"</span>);</span><br><span class="line">	<span class="keyword">if</span>(inden &gt; <span class="number">0</span>)</span><br><span class="line">		printf(<span class="string">"---"</span>);</span><br><span class="line">	printf(<span class="string">"%d\n"</span>,T-&gt;data);</span><br><span class="line">	PrintBiTree(T-&gt;LChild,inden+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> Leafnum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> LeafNodeSearch(BiTree *T)<span class="comment">//寻找叶子节点的数量，递归形式要配合静态变量</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;LChild == <span class="literal">NULL</span> &amp;&amp; T-&gt;RChild == <span class="literal">NULL</span>)</span><br><span class="line">			Leafnum++;</span><br><span class="line">		LeafNodeSearch(T-&gt;LChild);</span><br><span class="line">		LeafNodeSearch(T-&gt;RChild);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> Leafnum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> Comnum = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> ComTreeDetection(BiTree *T)<span class="comment">//检测是否为完全二叉树，未实现</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(T-&gt;LChild == <span class="literal">NULL</span> &amp;&amp; T-&gt;RChild != <span class="literal">NULL</span>)</span><br><span class="line">			Comnum = <span class="number">0</span>;</span><br><span class="line">		LeafNodeSearch(T-&gt;LChild);</span><br><span class="line">		LeafNodeSearch(T-&gt;RChild);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> Comnum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> Destroy(BiTree **T)<span class="comment">//释放二叉树</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>((*T) != <span class="literal">NULL</span> &amp;&amp; (*T)-&gt;LChild != <span class="literal">NULL</span>)</span><br><span class="line">		Destroy(&amp;(*T)-&gt;LChild);</span><br><span class="line">	<span class="keyword">if</span>((*T) != <span class="literal">NULL</span> &amp;&amp; (*T)-&gt;RChild != <span class="literal">NULL</span>)</span><br><span class="line">		Destroy(&amp;(*T)-&gt;RChild);</span><br><span class="line">	free(*T);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> *DestroyLeftNode(BiTree *T)<span class="comment">//删除左子树，因为是递归删除，所以该节点下所有点都会被删除</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T==<span class="literal">NULL</span> || T-&gt;LChild==<span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	Destroy(&amp;T-&gt;LChild);</span><br><span class="line">	<span class="keyword">return</span> T;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> *DestroyRightNode(BiTree *T)<span class="comment">//删除右子树，因为是递归删除，所以该节点下所有点都会被删除</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(T==<span class="literal">NULL</span> || T-&gt;RChild==<span class="literal">NULL</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">	Destroy(&amp;T-&gt;RChild);</span><br><span class="line">	<span class="keyword">return</span> T;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line">	BiTree *Tree;</span><br><span class="line">	CreateBitree(&amp;Tree);</span><br><span class="line">	<span class="comment">//printf("%d\n",Tree-&gt;data);</span></span><br><span class="line">	<span class="comment">//PreOrderTraverse(Tree);</span></span><br><span class="line">	<span class="comment">//InOrderTraverse(Tree);</span></span><br><span class="line">	<span class="comment">//PostOrderTraverse(Tree);</span></span><br><span class="line">	PrintBiTree(Tree,<span class="number">0</span>);</span><br><span class="line">	printf(<span class="string">"%d\n"</span>,LeafNodeSearch(Tree));</span><br><span class="line">	Destroy(&amp;Tree);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p></p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=soya2.github.io/2020/04/16/datatype/%20恰恰书库%20数据结构概念习题综合" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2019/10/15/osC/" title="OS题目解析">Next post: OS题目解析&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="soya2.github.io" rel="noopener noreferrer">Soya</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>数据结构概念习题综合 | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">数据结构概念习题综合</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/04/16/datatype/">2020-04-16</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h3 id="二叉树部分"><a href="#二叉树部分" class="headerlink" title="二叉树部分"></a>二叉树部分</h3><h4 id="树的概念及性质等"><a href="#树的概念及性质等" class="headerlink" title="树的概念及性质等"></a>树的概念及性质等</h4><h4 id="二叉树操作集合及习题函数"><a href="#二叉树操作集合及习题函数" class="headerlink" title="二叉树操作集合及习题函数"></a>二叉树操作集合及习题函数</h4><pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#define DataType int
+
+typedef struct Node{
+	DataType data;
+	struct Node *LChild, *RChild;
+	&#x2F;&#x2F;struct Node *Parent;
+}BiTree;
+
+void CreateBitree(BiTree **T)&#x2F;&#x2F;静态生成二叉树
+{
+	*T = (BiTree *)malloc(sizeof(BiTree));
+	(*T)-&gt;data = 1;
+	(*T)-&gt;LChild = (BiTree *)malloc(sizeof(BiTree));
+	(*T)-&gt;RChild = (BiTree *)malloc(sizeof(BiTree));
+
+	(*T)-&gt;LChild-&gt;data = 2;
+	(*T)-&gt;LChild-&gt;LChild = (BiTree *)malloc(sizeof(BiTree));
+	(*T)-&gt;LChild-&gt;LChild-&gt;data = 4;
+	(*T)-&gt;LChild-&gt;RChild = (*T)-&gt;LChild-&gt;LChild-&gt;LChild = (*T)-&gt;LChild-&gt;LChild-&gt;RChild = NULL;
+	
+	(*T)-&gt;RChild-&gt;data = 3;
+	(*T)-&gt;RChild-&gt;LChild = (BiTree *)malloc(sizeof(BiTree));
+	(*T)-&gt;RChild-&gt;LChild-&gt;data = 5;
+	(*T)-&gt;RChild-&gt;LChild-&gt;LChild = (*T)-&gt;RChild-&gt;LChild-&gt;RChild = NULL;
+
+	(*T)-&gt;RChild-&gt;RChild = (BiTree *)malloc(sizeof(BiTree));
+	(*T)-&gt;RChild-&gt;RChild-&gt;data = 6;
+	(*T)-&gt;RChild-&gt;RChild-&gt;LChild = (*T)-&gt;RChild-&gt;RChild-&gt;RChild = NULL;
+}
+
+BiTree *InsterBitreeLeftNode(BiTree *T, DataType x)&#x2F;&#x2F;插入新左子树
+{
+	if(T == NULL)
+		return NULL;
+	BiTree *orileft = T-&gt;LChild;&#x2F;&#x2F;先保存原有子树
+	BiTree *newleft = (BiTree *)malloc(sizeof(BiTree));
+	newleft-&gt;data = x;
+	newleft-&gt;LChild = orileft;
+	newleft-&gt;RChild = NULL;&#x2F;&#x2F;创建新子树并赋值
+	T-&gt;LChild = newleft;&#x2F;&#x2F;接回原有二叉树
+	return T-&gt;LChild; 
+}
+
+BiTree *InsterBitreeRightNode(BiTree *T, DataType x)&#x2F;&#x2F;插入新右子树
+{
+	if(T == NULL)
+		return NULL;
+	BiTree *oriright = T-&gt;RChild;&#x2F;&#x2F;先保存原有子树
+	BiTree *newright = (BiTree *)malloc(sizeof(BiTree));
+	newright-&gt;data = x;
+	newright-&gt;RChild = oriright;
+	newright-&gt;LChild = NULL;&#x2F;&#x2F;创建新子树并赋值
+	T-&gt;RChild = newright;&#x2F;&#x2F;接回原有二叉树
+	return T-&gt;RChild; 
+}
+
+void PreOrderTraverse(BiTree *T)&#x2F;&#x2F;先序遍历
+{
+	if(T)
+	{
+		printf(&quot;%d\t&quot;,T-&gt;data);
+		PreOrderTraverse(T-&gt;LChild);
+		PreOrderTraverse(T-&gt;RChild);
+	}
+	return ;
+}
+
+void InOrderTraverse(BiTree *T)&#x2F;&#x2F;中序遍历
+{
+	if(T)
+	{
+		InOrderTraverse(T-&gt;LChild);
+		printf(&quot;%d\t&quot;,T-&gt;data);
+		InOrderTraverse(T-&gt;RChild);
+	}
+	return ;
+}
+
+void PostOrderTraverse(BiTree *T)&#x2F;&#x2F;后序遍历
+{
+	if(T)
+	{
+		PostOrderTraverse(T-&gt;LChild);
+		PostOrderTraverse(T-&gt;RChild);
+		printf(&quot;%d\t&quot;,T-&gt;data);
+	}
+	return ;
+}
+
+void PrintBiTree(BiTree *T,int inden)
+{
+	if(T==NULL)
+		return ;
+	PrintBiTree(T-&gt;RChild,inden+1);
+	for(int i = 0;i&lt;inden;i++)
+		printf(&quot;\t&quot;);
+	if(inden &gt; 0)
+		printf(&quot;---&quot;);
+	printf(&quot;%d\n&quot;,T-&gt;data);
+	PrintBiTree(T-&gt;LChild,inden+1);
+}
+
+static int Leafnum = 0;
+int LeafNodeSearch(BiTree *T)&#x2F;&#x2F;寻找叶子节点的数量，递归形式要配合静态变量
+{
+	if(T)
+	{
+		if(T-&gt;LChild == NULL &amp;&amp; T-&gt;RChild == NULL)
+			Leafnum++;
+		LeafNodeSearch(T-&gt;LChild);
+		LeafNodeSearch(T-&gt;RChild);
+	}
+	else
+		return 0;
+	return Leafnum;
+}
+
+static int Comnum = 1;
+int ComTreeDetection(BiTree *T)&#x2F;&#x2F;检测是否为完全二叉树，未实现
+{
+	if(T)
+	{
+		if(T-&gt;LChild == NULL &amp;&amp; T-&gt;RChild != NULL)
+			Comnum = 0;
+		LeafNodeSearch(T-&gt;LChild);
+		LeafNodeSearch(T-&gt;RChild);
+	}
+	else
+		return 0;
+	return Comnum;
+}
+
+void Destroy(BiTree **T)&#x2F;&#x2F;释放二叉树
+{
+	if((*T) != NULL &amp;&amp; (*T)-&gt;LChild != NULL)
+		Destroy(&amp;(*T)-&gt;LChild);
+	if((*T) != NULL &amp;&amp; (*T)-&gt;RChild != NULL)
+		Destroy(&amp;(*T)-&gt;RChild);
+	free(*T);
+}
+
+void *DestroyLeftNode(BiTree *T)&#x2F;&#x2F;删除左子树，因为是递归删除，所以该节点下所有点都会被删除
+{
+	if(T==NULL || T-&gt;LChild==NULL)
+		return NULL;
+	Destroy(&amp;T-&gt;LChild);
+	return T;
+}
+
+void *DestroyRightNode(BiTree *T)&#x2F;&#x2F;删除右子树，因为是递归删除，所以该节点下所有点都会被删除
+{
+	if(T==NULL || T-&gt;RChild==NULL)
+		return NULL;
+	Destroy(&amp;T-&gt;RChild);
+	return T;
+}
+
+int main()
+{
+	BiTree *Tree;
+	CreateBitree(&amp;Tree);
+	&#x2F;&#x2F;printf(&quot;%d\n&quot;,Tree-&gt;data);
+	&#x2F;&#x2F;PreOrderTraverse(Tree);
+	&#x2F;&#x2F;InOrderTraverse(Tree);
+	&#x2F;&#x2F;PostOrderTraverse(Tree);
+	PrintBiTree(Tree,0);
+	printf(&quot;%d\n&quot;,LeafNodeSearch(Tree));
+	Destroy(&amp;Tree);
+	return 0;
+}</code></pre>
+</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/04/16/datatype/">soya2.github.io/2020/04/16/datatype/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/数据结构/">数据结构</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#二叉树部分"><span class="toc-number">1.</span> <span class="toc-text">二叉树部分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#树的概念及性质等"><span class="toc-number">1.1.</span> <span class="toc-text">树的概念及性质等</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二叉树操作集合及习题函数"><span class="toc-number">1.2.</span> <span class="toc-text">二叉树操作集合及习题函数</span></a></li></ol></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="next" href="/2019/10/15/osC/">OS题目解析 &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
+.v a { color: #0F9FB4; }
+.v a:hover { color: #216C73; }
+.v li { list-style: inherit; }
+.v .vwrap { border: 1px solid #223441; border-radius: 0; }
+.v .vwrap:hover { box-shadow: 0 0 6px 1px #223441; }
+.v .vbtn { border-radius: 0; color: #cecece; background: none; }
+.v .vlist .vcard .vh { border-bottom-color: #293D4E; }
+.v .vwrap .vheader .vinput { border-bottom-color: #223441; }
+.v .vwrap .vheader .vinput:focus { border-bottom-color: #339EB4; }
+.v code, .v pre,.v .vlist .vcard .vhead .vsys { background: #203240; }
+.v code, .v pre { color: #F0F0F0; font-size: 95%; }
+.v .vlist .vcard .vcontent.expand:before { background: linear-gradient(180deg,hsla(206,33%,19%,0),hsla(206,33%,19%,.9)); }
+.v .vlist .vcard .vcontent.expand:after { background: hsla(206,33%,19%,.9); }</style><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'',
+  appKey:'',
+  lang: 'zh-cn',
+  placeholder:'ヾﾉ≧∀≦)o Come on, say something...',
+  avatar:'identicon',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></section><footer><p>Copyright © 2016 - 2020 <a href="/." rel="nofollow">恰恰书库</a> | <strong><a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></strong><br><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span></span> <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span></span> | Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a>Theme with<a rel="nofollow" target="_blank" href="https://github.com/litreily/snark-hexo"> snark.</a></p></footer></div></div></div><script type="text/javascript" src="/plugins/prettify/prettify.js"></script><script type="text/javascript" src="/js/search.js"></script><script type="text/javascript" src="/js/top.js"></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+    search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"></body></html>
