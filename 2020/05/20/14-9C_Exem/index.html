@@ -60,7 +60,7 @@ main()
     t=f((a+1));
     printf(&quot;%d,%d\n&quot;,s,t);
 }</code></pre>
-<p>程序运行后的输出结果是(A)。<br>A．10，64    B．10，10    C．64，10    D．64，64<br>s＝f(a+1)＝a+1<em>a+1*a+1=3+3+3+1=10，t＝f((a+1))＝(a+1)</em>(a+1)*(a+1)=4×4×4=64</p>
+<p>程序运行后的输出结果是(A)。<br>A．10，64    B．10，10    C．64，10    D．64，64<br>s＝f(a+1)＝a+1*a+1*a+1=3+3+3+1=10，t＝f((a+1))＝(a+1)*(a+1)*(a+1)=4×4×4=64</p>
 <p>7．有以下程序：</p>
 <pre><code>#include &lt;stdio.h&gt;
 main()
@@ -195,7 +195,7 @@ main()
     printf(&quot;%d\n&quot;,a=2*b);
 }</code></pre>
 <p>程序运行后的输出结果是(D)。<br>A．0，0    B．1，0    C．3，2    D．1，2</p>
-<h4 id="35．设有以下函数："><a href="#35．设有以下函数：" class="headerlink" title="35．设有以下函数："></a>35．设有以下函数：</h4><p>void fun(int n, char <em>s){……} 则下面对函数指针的定义和赋值均是正确的是(A)。<br>A．void (\</em>pf)();pf=fun;    B．void *pf();pf=fun;<br>C．void *pf();*pf=fun;    D．void (*pf)(int,char);pf=&fun;<br>函数指针的一般定义形式为：数据类型(<em>指针变量名)( )。D项，void(</em>pf)(int，char)带有两个数据类型，不符合函数指针定义。</p>
+<h4 id="35．设有以下函数："><a href="#35．设有以下函数：" class="headerlink" title="35．设有以下函数："></a>35．设有以下函数：</h4><p>void fun(int n, char *s){……} 则下面对函数指针的定义和赋值均是正确的是(A)。<br>A．void (*pf)();pf=fun;    B．void *pf();pf=fun;<br>C．void *pf();*pf=fun;    D．void (*pf)(int,char);pf=&fun;<br>函数指针的一般定义形式为：数据类型(*指针变量名)( )。D项，void(*pf)(int，char)带有两个数据类型，不符合函数指针定义。</p>
 <p>37．阅读以下程序：</p>
 <pre><code>#include &lt;stdio.h&gt;
 main()
@@ -225,15 +225,15 @@ int fun(int a[],int m)
     int low=0,high=N-1,mid;
     while(low&lt;=high)
     {
-        mid=【1】;
+        mid=_______;
         if(m&lt;a[mid])
-            high=【2】;
+            high=________;
         else if(m&gt;a[mid])
             low=mid+1;
         else
             return(mid);
     }
-    【3】(-1);
+    _______ (-1);
 } 
 main()
 {
