@@ -1,172 +1,122 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>14年3月二级C语言真题及详解 | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>14年3/9月二级C语言 | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">14年3月二级C语言真题及详解</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/05/19/14-3C_Exem/">2020-05-19</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h3 id="一、选择题-每题1分-共40分"><a href="#一、选择题-每题1分-共40分" class="headerlink" title="一、选择题(每题1分,共40分)"></a>一、选择题(每题1分,共40分)</h3><p>1．有以下程序：</p>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">14年3/9月二级C语言</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/05/19/14-3C_Exem/">2020-05-19</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h2 id="三月"><a href="#三月" class="headerlink" title="三月"></a>三月</h2><h3 id="一、选择题-每题1分-共40分"><a href="#一、选择题-每题1分-共40分" class="headerlink" title="一、选择题(每题1分,共40分)"></a>一、选择题(每题1分,共40分)</h3><p>1．有以下程序：程序运行后的输出结果是<strong>21</strong></p>
 <pre><code>#include&lt;stdio.h&gt; 
-int main()
-{
+int main(){
 	int a=5,b=1,t;
 	t=(a&lt;&lt;2)|b;
 	printf(&quot;%d\n&quot;,t);
 }</code></pre>
-<p>程序运行后的输出结果是(A)。<br>A．21 B．11 C．6 D．1<br>计算5&lt;&lt;2，即101左移2位后为10100，然后和00001进行或运算等于10101，其十进制为21。 </p>
-<h4 id="2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是-C-。"><a href="#2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是-C-。" class="headerlink" title="2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是(C)。"></a>2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是(C)。</h4><p>A．auto    B．register    C．static    D．auto或register<br>静态存储类型变量在未对其初始化时的默认初始化值是0，其他存储类型不能确定变量在未赋值情况的初值。 </p>
-<p>3．若有以下定义： int x[10],*pt=x; 则对x数组元素的正确引用是(B)。<br>A．*&amp;x[10]    B．*(x+3)==a[3]    C．*(pt+10)    D．pt+3==&amp;a[3]<br>【解析】数组的下标是从0开始的，故使用x[10]就会溢出，所以AC两项错误;D项,pt+ 3指向地址，并未引用到元素;B项的表达正确，引用x[3]。</p>
-<p>4．有以下程序：</p>
+<p>计算5&lt;&lt;2，即101左移2位后为10100，然后和00001进行或运算等于10101，其十进制为21。 </p>
+<h4 id="2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是"><a href="#2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是" class="headerlink" title="2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是"></a>2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是</h4><p>A．auto    B．register    <strong>C．static</strong>    D．auto或register<br>静态存储类型变量在未对其初始化时的默认初始化值是0，其他存储类型不能确定变量在未赋值情况的初值。 </p>
+<p>3．若有以下定义： int x[10],*pt=x; 则对x数组元素的正确引用是<br>A．*&amp;x[10]    <strong>B．*(x+3)==a[3]</strong>    C．*(pt+10)    D．pt+3==&amp;a[3]<br>【解析】数组的下标是从0开始的，故使用x[10]就会溢出，所以AC两项错误;D项,pt+ 3指向地址，并未引用到元素;B项的表达正确，引用x[3]。</p>
+<p>4．有以下程序：输出结果是<strong>2，3</strong></p>
 <pre><code>#include &lt;stdio.h&gt; 
-struct ord 
-{
+struct ord{
 	int x,y;
 }
 dt[2]={&#39;{1,2},{3,4}&#39;}; 	&#x2F;&#x2F;其中分号为了避免与js冲突，源码中不存在，下同
-int main() 
-{
+int main(){
 	struct ord *p=dt; 
 	printf(&quot;%d&quot;,++(p-&gt;x)); 
 	printf(&quot;%d&quot;,++(p-&gt;y)); 
 }</code></pre>
-<p>程序运行后的输出结果是(B)。<br>A．1，2     B．2，3     C．3，4     D．4，1<br>dt是一个结构体数组，所以初始化的结果为dt[0]={1，2}，dt[1]={3，4}。*p=dt;，表示p指向dt[0]。++p-&gt;x 中，-&gt;的优先级大于++，所以表达式等价于++(p-&gt;x)，因为p-&gt;x为1，所以输出这个值为2，同理，第二个++p-&gt;y的值为2+1=3。 </p>
+<p>dt是一个结构体数组，所以初始化的结果为dt[0]={1，2}，dt[1]={3，4}。*p=dt;，表示p指向dt[0]。++p-&gt;x 中，-&gt;的优先级大于++，所以表达式等价于++(p-&gt;x)，因为p-&gt;x为1，所以输出这个值为2，同理，第二个++p-&gt;y的值为2+1=3。 </p>
 <p>5．以下函数按每行8个输出数组中的数据：</p>
-<pre><code>void fun(int *w,int n)
-{
+<pre><code>void fun(int *w,int n){
 	int i; 
 	for(i=0;i&lt;n;i++)
 		printf(&quot;%d&quot;,w[i]);  
 	__________________
 }</code></pre>
-<p>下划线处应填入的语句是(C)。<br>A．if(i/8==0) printf(“\n”);   B．if(i/8==0) continue;<br>C．if(i%8==0) printf(“\n”);   D．if(i%8==0) continue;<br>每行输出8个数组数据后输入一个换行，应该采取对8取余的方法，余数循环一次便换行一次，所以语句为if(i%8==0) printf(“\n”);。</p>
-<p>6．有以下程序：</p>
+<p>下划线处应填入的语句是<br>A．if(i/8==0) printf(“\n”);   B．if(i/8==0) continue;<br><strong>C．if(i%8==0) printf(“\n”);</strong>   D．if(i%8==0) continue;<br>每行输出8个数组数据后输入一个换行，应该采取对8取余的方法，余数循环一次便换行一次，所以语句为if(i%8==0) printf(“\n”);。</p>
+<p>6．有以下程序：输出结果是<strong>1028</strong></p>
 <pre><code>#include &lt;stdio.h&gt; 
 int b=2;
-int fun(int *k)
-{
+int fun(int *k){
 	b=*k+b;
 	return(b);
 }
-main() 
-{
+main(){
 	int a[10]={1,2,3,4,5,6,7,8},i;
-	for(i=2;i&lt;4;i++)
-	{
+	for(i=2;i&lt;4;i++){
 		b=fun(&amp;a[i])+b;
 		printf(&quot;%d&quot;,b);
 	}
 	printf(&quot;\n&quot;);
 }</code></pre>
-<p>程序运行后的输出结果是(C)。<br>A．1012    B．810    C．1028    D．1016<br>变量b是全局变量。for循环第一次i=2，a[i]=3，所以fun(&amp;a[i])=3+2=5，这时b为5，所以输出的b=fun(&amp;a[i])+b=5+5=10。for循环第二次，i=3,b=10，然后fun(&amp;a[i])，代入a[i]=4，这时fun(&amp;a[i])=10+4=14，所以输出的b=fun(&amp;a[i])+b=14+14=28。</p>
-<p>7．有以下程序：</p>
+<p>变量b是全局变量。for循环第一次i=2，a[i]=3，所以fun(&amp;a[i])=3+2=5，这时b为5，所以输出的b=fun(&amp;a[i])+b=5+5=10。for循环第二次，i=3,b=10，然后fun(&amp;a[i])，代入a[i]=4，这时fun(&amp;a[i])=10+4=14，所以输出的b=fun(&amp;a[i])+b=14+14=28。</p>
+<p>7．有以下程序：字母a的ASCII码值为97，程序运行后的输出结果是<strong>d</strong></p>
 <pre><code>#include &lt;stdio.h&gt;
-void fun(char *s)
-{
-	while(*s) 
-	{
+void fun(char *s){
+	while(*s) {
 		if(*s%2==0)printf(&quot;%c&quot;,*s);
 		s++;
 	} 
 }
-main()
-{
+main(){
 	char a[]=(&quot;good&quot;);
 	fun(a);
 	printf(&quot;\n&quot;);
 }</code></pre>
-<p>注意：字母a的ASCII码值为97，程序运行后的输出结果是(A)。<br>A．d    B．go    C．god    D．good<br>字符串”good”中g的ASCII码值为103，o为111，d为100。在函数中选择值为偶数的字母输出。只有d的ASCII码值为偶数，所以结果为d。</p>
-<h4 id="8．有以下程序："><a href="#8．有以下程序：" class="headerlink" title="8．有以下程序："></a>8．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt;
-main()
-{
+<p>字符串”good”中g的ASCII码值为103，o为111，d为100。在函数中选择值为偶数的字母输出。只有d的ASCII码值为偶数，所以结果为d。</p>
+<h4 id="8．有以下程序：若文本文件filea-txt中原有内容为：hello，则运行以上程序后，文件filea-txt中的内容为abc"><a href="#8．有以下程序：若文本文件filea-txt中原有内容为：hello，则运行以上程序后，文件filea-txt中的内容为abc" class="headerlink" title="8．有以下程序：若文本文件filea.txt中原有内容为：hello，则运行以上程序后，文件filea.txt中的内容为abc"></a>8．有以下程序：若文本文件filea.txt中原有内容为：hello，则运行以上程序后，文件filea.txt中的内容为<strong>abc</strong></h4><pre><code>#include &lt;stdio.h&gt;
+main(){
 	FILE *f; 
 	f=fopen(&quot;filea.txt&quot;,&quot;w&quot;);
 	fprintf(f,&quot;abc&quot;);
 	fclose(f);
 }</code></pre>
-<p>若文本文件filea.txt中原有内容为：hello，则运行以上程序后，文件filea.txt中的内容为(C)。<br>A．helloabc    B．abelo    C．abc    D．abchello<br>以只写模式打开文件;先清空再写入。</p>
-<p>9．有以下程序：</p>
-<pre><code>#include &lt;stdio.h&gt;
-int f(int x, int y)
-{
-	return((y-x)*x);
-} 
-main()
-{
-	int a=3,b=4,c=5,d;
-	d=f(f(a,b),f(a,c));
-	printf(&quot;%d\n&quot;,d);
-}</code></pre>
-<p>程序运行后的输出结果是(B)。<br>A．10    B．9    C．8    D．7<br>注意计算</p>
-<h4 id="10．有以下程序："><a href="#10．有以下程序：" class="headerlink" title="10．有以下程序："></a>10．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt; 
+<p>以只写模式打开文件;先清空再写入。</p>
+<h4 id="10．有以下程序：程序运行后的输出结果是7-5"><a href="#10．有以下程序：程序运行后的输出结果是7-5" class="headerlink" title="10．有以下程序：程序运行后的输出结果是7.5"></a>10．有以下程序：程序运行后的输出结果是<strong>7.5</strong></h4><pre><code>#include &lt;stdio.h&gt; 
 #define PT 3.5 
 #define S(x) PT*x*x &#x2F;&#x2F;PT*a+b*a+b=3.5*1+2*1+2 = 7.5
-main() 
-{
+main(){
 	int a=1,b=2;
 	printf(&quot;%4.1f\n&quot;,S(a+b));
 }</code></pre>
-<p>程序运行后的输出结果是(C)。<br>A．14.0    B．31.5    C．7.5    D．程序有错无输出结果<br>S(a+b)=7.5。注意：宏只能简单替换，不能做任何修改。</p>
-<p>11．有以下程序：</p>
-<pre><code>#include &lt;stdio.h&gt;
-main()
-{
-	int a1,a2;char c1,c2;
-	scanf(&quot;%d%c%d%c&quot;,&amp;a1,&amp;c1,&amp;a2,&amp;c2);
-	printf(&quot;%d,%c,%d,%c&quot;,a1,c1,a2,c2);
-}</code></pre>
-<p>若想通过键盘输入，使得a1的值为12，a2的值为34,c1的值为a，c2的值为b，程序输出结果是：12，a，34，b,则正确的输入格式是(以下_代表空格，<cr>代表回车)(A)。<br>A．12a34b<cr>    B．12_a_34_b<cr>    C．12，a，34，b<cr>    D．12_a34_b<cr><br>根据scanf函数中的格式说明字符串，各个输入之间没有任何符号，所以键盘输入也应该没有符号。 </cr></cr></cr></cr></cr></p>
+<p>S(a+b)=7.5。注意：宏只能简单替换，不能做任何修改。</p>
 <p>12．设有宏定义：</p>
-<p>#define IsDIV(k，n) ((k%n==1)?1∶0)<br>且变量m已正确定义并赋值,则宏调用：IsDIV(m，5)&amp;&amp;IsDIV(m，7)为真时所要表达的是(D)。<br>A．判断m是否能被5或者7整除    B．判断m是否能被5和7整除<br>C．判断m被5或者7整除是否余1    D．判断m被5和7整除是否都余1 </p>
-<h4 id="15．有以下程序："><a href="#15．有以下程序：" class="headerlink" title="15．有以下程序："></a>15．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt; 
+<p>#define IsDIV(k，n) ((k%n==1)?1∶0)<br>且变量m已正确定义并赋值,则宏调用：IsDIV(m，5)&amp;&amp;IsDIV(m，7)为真时所要表达的是<br>A．判断m是否能被5或者7整除    B．判断m是否能被5和7整除<br>C．判断m被5或者7整除是否余1    <strong>D．判断m被5和7整除是否都余1</strong></p>
+<h4 id="15．有以下程序：输出结果是1-3"><a href="#15．有以下程序：输出结果是1-3" class="headerlink" title="15．有以下程序：输出结果是1,3"></a>15．有以下程序：输出结果是<strong>1,3</strong></h4><pre><code>#include &lt;stdio.h&gt; 
 void fun(int *p,int *q)
-main() 
-{
+main(){
 	int m=1,n=2,*r=&amp;m;
 	f(r,&amp;n);
 	printf(&quot;%d,%d&quot;,m,n);
 } 
-void f(int *p,int *q)
-{
+void f(int *p,int *q){
 	p=p+1;		&#x2F;&#x2F;p=&amp;m+1
 	*q=*q+1;	&#x2F;&#x2F;n=n+1
 }</code></pre>
-<p>程序运行后的输出结果是(A)。<br>A．1，3    B．2，3    C．1，4    D．1，2<br>执行语句 p=p+1;只改变指针p的地址，跟p内容无关，所以m值没有改变</p>
-<p>17．设有定义：char s[81];int i=0;，以下不能将一行(不超过80个字符)带有空格的字符串正确读入的语句或语句组是(C)。<br>A．gets(s);<br>B．while((s[i++]=getchar())!=′\n′);s[i]=′\0′;<br>C．scanf(“%s”,s);<br>D．do{scanf(“%c”,&amp;s[i]);}while(s[i++]!=′\n′);s[i]=′\0′;<br>字符串的输入有两种方式：scanf()函数;gets()函数。s代表<strong>输入一个字符数组，遇到空格时会默认字符串输入结束</strong>。</p>
-<p>18．若有定义语句：double x，y，*px，*py;执行了px=&x;py=&y;之后，正确的输入语句是(C)。<br>A．scanf(“%f%f”,x,y);    B．scanf(“%f%f”,&amp;x,&amp;y);<br>C．scanf(“%lf%lf”,px,py);    D．scanf(“%1f%1f”,x,y);<br>输入函数scanf的标准格式是：scanf(格式控制，地址列表)。double型为%lf。</p>
-<h4 id="19．以下选项中正确的语句组是-D-。"><a href="#19．以下选项中正确的语句组是-D-。" class="headerlink" title="19．以下选项中正确的语句组是(D)。"></a>19．以下选项中正确的语句组是(D)。</h4><p>A．char s[];s=”BOOK!”;    B．char *s;s={“BOOK!”};<br>C．char s[10];s=”BOOK!”;    D．char *s;s=”BOOK!”;<br>AC两项错误，不能直接将一个字符串整体赋值给字符数组;B项错误，{“BOOK!”}表示一个字符串数组，对应char **的指针结构;D项正确，语句先定义一个字符串变量，然后将变量指向一个字符串常量。</p>
-<h4 id="20．有以下程序："><a href="#20．有以下程序：" class="headerlink" title="20．有以下程序："></a>20．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt;
-void fun(int *a,int *b)
-{
+<p>执行语句 p=p+1;只改变指针p的地址，跟p内容无关，所以m值没有改变</p>
+<p>17．设有定义：char s[81];int i=0;，以下不能将一行(不超过80个字符)带有空格的字符串正确读入的语句或语句组是<br>A．gets(s);<br>B．while((s[i++]=getchar())!=′\n′);s[i]=′\0′;<br><strong>C．scanf(“%s”,s);</strong><br>D．do{scanf(“%c”,&amp;s[i]);}while(s[i++]!=′\n′);s[i]=′\0′;<br>字符串的输入有两种方式：scanf()函数;gets()函数。s代表<strong>输入一个字符数组，遇到空格时会默认字符串输入结束</strong>。</p>
+<p>18．若有定义语句：double x，y，*px，*py;执行了px=&x;py=&y;之后，正确的输入语句是<br>A．scanf(“%f%f”,x,y);    B．scanf(“%f%f”,&amp;x,&amp;y);<br><strong>C．scanf(“%lf%lf”,px,py);</strong>    D．scanf(“%1f%1f”,x,y);<br>输入函数scanf的标准格式是：scanf(格式控制，地址列表)。double型为%lf。</p>
+<h4 id="19．以下选项中正确的语句组是"><a href="#19．以下选项中正确的语句组是" class="headerlink" title="19．以下选项中正确的语句组是"></a>19．以下选项中正确的语句组是</h4><p>A．char s[];s=”BOOK!”;    B．char *s;s={“BOOK!”};<br>C．char s[10];s=”BOOK!”;    <strong>D．char *s;s=”BOOK!”;</strong><br>AC两项错误，不能直接将一个字符串整体赋值给字符数组;B项错误，{“BOOK!”}表示一个字符串数组，对应char **的指针结构;D项正确，语句先定义一个字符串变量，然后将变量指向一个字符串常量。</p>
+<h4 id="20．有以下程序：输出结果是3，5，3，5"><a href="#20．有以下程序：输出结果是3，5，3，5" class="headerlink" title="20．有以下程序：输出结果是3，5，3，5"></a>20．有以下程序：输出结果是<strong>3，5，3，5</strong></h4><pre><code>#include &lt;stdio.h&gt;
+void fun(int *a,int *b){
 	int *c;
 	c=a;a=b;b=c;
 }&#x2F;&#x2F;*c=*a;*a=*b;*b=*c;实参的值会改变
-main() 
-{
+main() {
 	int x=3,y=5,*p=&amp;x,*q=&amp;y;
 	fun(p,q);
 	printf(&quot;%d,%d&quot;,*p,*q);
 	fun(&amp;x,&amp;y);
 	printf(&quot;%d,%d\n&quot;,*p,*q);
 }</code></pre>
-<p>程序运行后的输出结果是(B)。<br>A．3，5，5，3    B．3，5，3，5    C．5，3，3，    D．5，3，5，3<br>C语言中，函数参数传递的功能是“单向传值”，即形参和实参是两个没有关系的变量。<strong>函数的形参为指针变量，函数内部交换的是地址值，不是地址值所指向的值，所以不会改变实参的值。</strong></p>
-<p>21．以下选项中，能用作数据常量的是(D)。<br>A．o115    B．0118    C．1-5e1.5    D．115L<br>C语言中实型常量有两种表示：小数形式和指数形式。在指数形式中，字母e(或E)之前必须要有数字，且e或E后面的指数必须为整数，故C项错误;八进制整数常量以数字0开始，故A项错误。在八进制数中的有效数字为0～7，故B项错误;L是长整型数据标识，115L为长整型常数即long int，D项正确。 </p>
-<p>24．以下是if语句的基本形式： if(表达式)语句 其中“表达式”(D)。<br>A．必须是逻辑表达式    B．必须是关系表达式<br>C．必须是逻辑表达式或关系表达式    D．可以是任意合法的表达式<br>if中的表达式一般是关系表达式或逻辑表达式，用于描述选择结构的条件，但也可以是其他类型表达式，在其值非零时为真，所以任意合法的表达式都可以做if语句的判断条件。 </p>
+<p>C语言中，函数参数传递的功能是“单向传值”，即形参和实参是两个没有关系的变量。<strong>函数的形参为指针变量，函数内部交换的是地址值，不是地址值所指向的值，所以不会改变实参的值。</strong></p>
+<p>21．以下选项中，能用作数据常量的是<br>A．o115    B．0118    C．1-5e1.5    <strong>D．115L</strong><br>C语言中实型常量有两种表示：小数形式和指数形式。在指数形式中，字母e(或E)之前必须要有数字，且e或E后面的指数必须为整数，故C项错误;八进制整数常量以数字0开始，故A项错误。在八进制数中的有效数字为0～7，故B项错误;L是长整型数据标识，115L为长整型常数即long int，D项正确。 </p>
+<p>24．以下是if语句的基本形式： if(表达式)语句 其中“表达式”<br>A．必须是逻辑表达式    B．必须是关系表达式<br>C．必须是逻辑表达式或关系表达式    <strong>D．可以是任意合法的表达式</strong><br>if中的表达式一般是关系表达式或逻辑表达式，用于描述选择结构的条件，但也可以是其他类型表达式，在其值非零时为真，所以任意合法的表达式都可以做if语句的判断条件。 </p>
 <p>28．以下程序段中的变量已正确定义：</p>
 <pre><code>for(i=0;i&lt;4;i++,i++)
 	for(k=1;k&lt;3;k++);
 printf(&quot;*&quot;); </code></pre>
 <p>程序段的输出结果是(D)。<br>A．****** B．**** C．** D．*<br>第二个for循环以“;”结束，整个双重循环将被视为空语句。执行下一个顺序语句，输出一个*。</p>
-<p>29．有以下程序：</p>
-<pre><code>#include &lt;stdio.h&gt;
-main()
-{
-	int x;
-	scanf(&quot;%d&quot;,&amp;x);
-	if(x&lt;=3);
-	else if(x!=10)
-		printf(&quot;%d\n&quot;,x);
-}</code></pre>
-<p>程序运行时，输入的值在哪个范围内才会有输出结果(B)。<br>A．不等于10的整数        B．大于3且不等于10的整数<br>C．大于3或等于10的整数    D．小于3的整数</p>
-<h4 id="30．若函数中有定义语句：int-k-，则-B-。"><a href="#30．若函数中有定义语句：int-k-，则-B-。" class="headerlink" title="30．若函数中有定义语句：int k;，则(B)。"></a>30．若函数中有定义语句：int k;，则(B)。</h4><p>A．系统将自动给k赋初值0    B．这时k中的值无定义<br>C．系统将自动给k赋初值-1    D．这时k中无任何值<br>定义一个整型变量是动态定义，所以k中的值无定义。</p>
-<p>31．设变量已正确定义，以下<strong>不能</strong>统计出一行中输入字符个数(不包含回车符)的程序段是(D)。<br>A．n=0;while((ch=getchar())!=”\n”)n++;<br>B．n=0;while(getchar()!=”\n”)n++;<br>C．for(n=0;getchar()!=”\n”;n++);<br>D．n=0;for(ch=getchar()!=”\n”;n++);<br>D项中for循环表达式格式错误，应在ch前添加“;”。</p>
-<h4 id="33．有以下程序："><a href="#33．有以下程序：" class="headerlink" title="33．有以下程序："></a>33．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt;
-main()
-{
+<h4 id="30．若函数中有定义语句：int-k-，则"><a href="#30．若函数中有定义语句：int-k-，则" class="headerlink" title="30．若函数中有定义语句：int k;，则"></a>30．若函数中有定义语句：int k;，则</h4><p>A．系统将自动给k赋初值0    <strong>B．这时k中的值无定义</strong><br>C．系统将自动给k赋初值-1    D．这时k中无任何值<br>定义一个整型变量是动态定义，所以k中的值无定义。</p>
+<p>31．设变量已正确定义，以下<strong>不能</strong>统计出一行中输入字符个数(不包含回车符)的程序段是<br>A．n=0;while((ch=getchar())!=”\n”)n++;<br>B．n=0;while(getchar()!=”\n”)n++;<br>C．for(n=0;getchar()!=”\n”;n++);<br><strong>D．n=0;for(ch=getchar()!=”\n”;n++);</strong><br>D项中for循环表达式格式错误，应在ch前添加“;”。</p>
+<h4 id="33．有以下程序：输出结果是1，3，3"><a href="#33．有以下程序：输出结果是1，3，3" class="headerlink" title="33．有以下程序：输出结果是1，3，3"></a>33．有以下程序：输出结果是<strong>1，3，3</strong></h4><pre><code>#include &lt;stdio.h&gt;
+main(){
 	int a=1,b=2,c=3,d=0;
 	if(a==1&amp;&amp;b++==2)
 		if(b!=2||c--!=3)
@@ -176,61 +126,39 @@ main()
 	else
 		printf(&quot;%d,%d,%d\n&quot;,a,b,c);
 }</code></pre>
-<p>程序运行后的输出结果是(C).<br>A．1，2，3    B．1，3，2    C．1，3，3    D．3，2，1<br>第一个if语句的判断条件为真，进入if语句。b经过b++运算后值为3，<strong>所以第二个if语句为真(逻辑或运算时，一个为真，整体都为真，并且第一个为真时第二个不会被执行运算</strong>，这时后面的运算都忽略,c仍为3。</p>
-<h4 id="34．有以下程序："><a href="#34．有以下程序：" class="headerlink" title="34．有以下程序："></a>34．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt; 
-main() 
-{
+<p>第一个if语句的判断条件为真，进入if语句。b经过b++运算后值为3，<strong>所以第二个if语句为真(逻辑或运算时，一个为真，整体都为真，并且第一个为真时第二个不会被执行运算</strong>，这时后面的运算都忽略,c仍为3。</p>
+<h4 id="34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是567"><a href="#34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是567" class="headerlink" title="34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是567"></a>34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是<strong>567</strong></h4><pre><code>#include &lt;stdio.h&gt; 
+main(){
 	char *s={&quot;ABC&quot;}; 
-	do 
-	{
+	do{
 		printf(&quot;%d&quot;,*s%10);
 		s++;
 	}while(*s);
 }</code></pre>
-<p>注意：字母A的ASCII码值为65，程序运行后的结果是(C)。<br>A．5670    B．656667    C．567    D．ABC<br>指针指向串结束标志’\0’，’\0’对应ASCII值为0，即*s等于0，退出循环。因此，输出结果为567。</p>
-<p>35．以下选项中合法的标识符是(C)。<br>A．1_1    B．1-1    C．<em>11    D．1_</em><br>标识符由字母、数字和下划线组成，并且第一个字符必须是字母或下划线，不可以是数字。</p>
-<h4 id="36．有以下程序："><a href="#36．有以下程序：" class="headerlink" title="36．有以下程序："></a>36．有以下程序：</h4><pre><code>#include &lt;stdio.h&gt; 
-main() 
-{
+<p>指针指向串结束标志’\0’，’\0’对应ASCII值为0，即*s等于0，退出循环。因此，输出结果为567。</p>
+<h4 id="36．有以下程序：输出结果是aegi"><a href="#36．有以下程序：输出结果是aegi" class="headerlink" title="36．有以下程序：输出结果是aegi"></a>36．有以下程序：输出结果是<strong>aegi</strong></h4><pre><code>#include &lt;stdio.h&gt; 
+main(){
 	char *a[]={&quot;abcd&quot;,&quot;ef&quot;,&quot;gh&quot;,&quot;ijk&quot;};
 	int i; 
 	for(i=0;i&lt;4;i++)
 		printf(&quot;%c&quot;,*a[i]);
 }</code></pre>
-<p>程序运行后的输出结果是(A)。<br>A．aegi B．dfhk C．abcd D．abcdefghijk<br><strong>输出语句要求输出的格式是％c，为一个字符</strong>，所以每个元素输出第一个字符，即aegi。</p>
-<p>38．程序段：int x =12;double y=3.141593;printf(“%d%8.6f”,x,y);输出结果是(A)。<br>A．123.141593    B．123.141493    C．12，3.141593    D．123.1415930<br>输出的x与y间没有空格或逗号，”％8.6f”代表输出字符型数据y的格式应为小数点后保留6位。</p>
-<p>39．设有定义：int x=2;，以下表达式中，值<strong>不</strong>为6的是(D)。<br>A．x*=x+1    B．x++，2*x    C．x*=(1+x)    D．2*x，x+=2<br>A项，先执行x+1，赋值符号右侧为3，然后再x*=3，所以x=2*3=6;B项，x++得3然后2*x得6;C项与A项原理一致。D项，2*x虽然结果为4，但没有赋值，此时x的值仍为2，所以最终为4。</p>
-<p>40．有以下程序:</p>
-<pre><code>#include &lt;stdio.h&gt; 
-int fun(int x, int y) 
-{
-	if(x==y)
-		return(x);
-	else
-		return((x+y)&#x2F;2);
-} 
-main() 
-{
-	int a=4,b=5,c=6;
-	printf(&quot;%d\n&quot;,fun(2*a,fun(b,c)));
-}</code></pre>
-<p>程序运行后的输出结果是(B)。<br>A．3    B．6    C．8    D．12 </p>
+<p><strong>输出语句要求输出的格式是％c，为一个字符</strong>，所以每个元素输出第一个字符，即aegi。</p>
+<p>38．程序段：int x =12;double y=3.141593;printf(“%d%8.6f”,x,y);输出结果是<br><strong>A．123.141593</strong>    B．123.141493    C．12，3.141593    D．123.1415930<br>输出的x与y间没有空格或逗号，”％8.6f”代表输出字符型数据y的格式应为小数点后保留6位。</p>
+<p>39．设有定义：int x=2;，以下表达式中，值<strong>不</strong>为6的是(D)。<br>A．x*=x+1    B．x++，2*x    C．x*=(1+x)    <strong>D．2*x，x+=2</strong><br>A项，先执行x+1，赋值符号右侧为3，然后再x*=3，所以x=2*3=6;B项，x++得3然后2*x得6;C项与A项原理一致。D项，2*x虽然结果为4，但没有赋值，此时x的值仍为2，所以最终为4。</p>
 <h3 id="二、程序填空题-共18分"><a href="#二、程序填空题-共18分" class="headerlink" title="二、程序填空题(共18分)"></a>二、程序填空题(共18分)</h3><p>请补充fun函数，该函数的功能是：按‘0’到‘9’统计一个字符串中的奇数数字字符各自出现的次数，结果保存在数组num中。注意：不能使用字符串库函数。<br>例如，输入“x=1123.456+0.909*bc”，结果为：1=2，3=1，5=1，7=0，9=2。<br>注意： 请勿改动主函数main和其他函数中的任何内容，仅在函数fun的横线上填入所编写的若干表达式或语句。<br>【试题源程序】</p>
 <pre><code>#include &lt;conio.h&gt; 
 #include &lt;stdio.h&gt; 
 #define N 20 
-fun(char *tt,int num[]) 
-{
+fun(char *tt,int num[]) {
 	int i,j;
 	int bb[10];
 	char *p=tt;
-	for(i=0;i&lt;10;i++)
-	{
+	for(i=0;i&lt;10;i++){
 		num[i]=0;
 		bb[i]=0;
 	}
-	while((1)_____) 
-	{
+	while((1)_____){
 		if(*p&gt;=′0′&amp;&amp;*p&lt;=′9′)
 			(2)_____
 		p++;
@@ -238,8 +166,7 @@ fun(char *tt,int num[])
 	for(i=1,j=0;i&lt;10;i=i+2,j++)
 		(3)_____
 } 
-main() 
-{
+main(){
 	char str[N];
 	int num[10],k;
 	printf(&quot;\nPlease enter a string：&quot;); 
@@ -248,8 +175,7 @@ main()
 	puts(str);
 	fun(str,num);
 	printf(&quot;\n******* The number of letter *******\n&quot;);
-	for(k=0;k&lt;5;k++)
-	{
+	for(k=0;k&lt;5;k++){
 		printf(&quot;\n&quot;);
 		printf(&quot;%d=%d&quot;,2*k+1,num[k]);
 	} 
@@ -257,15 +183,13 @@ main()
 	return;
 }</code></pre>
 <p>答：(1)*p    (2)bb[*p-′0′]++    (3)num[j]=bb[i]<br>①先把数组num的各元素清0;②遍历字符串，利用数字字符在ASCII码中的连续规律，使用(数字字符 -′0′)作数组的下标，个数作数组元素的值。<br>填空(1)：此处用临时指针p遍历字符串str，所以应填*p。<br>填空(2)：因为10个数字字符在ASCII码中是连续的，将它们和字符′0′作差刚好用来作为数组的下标。所以此处应该填bb[*p-′0′]++。<br>填空(3)：在bb数组中是将所有数字出现的数字都统计了出来，所以在赋值给num数组时要将奇数提出来，故for条件中i+2。</p>
-<h3 id="三、程序修改题-共18分"><a href="#三、程序修改题-共18分" class="headerlink" title="三、程序修改题(共18分)"></a>三、程序修改题(共18分)</h3><p>下列给定程序中，函数fun( )的功能是：用选择法对数组中的n个元素按从小到大的顺序进行排序。<br>请改正程序中的错误，使它能得到正确结果。<br>注意：不要改动main函数，不得增行或删行，也不得更改程序的结构。<br>【试题源程序】</p>
+<h3 id="三、程序修改题-共18分"><a href="#三、程序修改题-共18分" class="headerlink" title="三、程序修改题(共18分)"></a>三、程序修改题(共18分)</h3><p>下列给定程序中，函数fun()的功能是：用选择法对数组中的n个元素按从小到大的顺序进行排序。<br>请改正程序中的错误，使它能得到正确结果。<br>注意：不要改动main函数，不得增行或删行，也不得更改程序的结构。<br>【试题源程序】</p>
 <pre><code>#include &lt;stdio.h&gt;
 #define N 20
-void fun(int a[],int n)
-{
+void fun(int a[],int n){
 	int i,j,t,p;
-	for(j=0;j&lt;n-1;j++)
-	{
-		p=j					&#x2F;&#x2F;error
+	for(j=0;j&lt;n-1;j++){
+		p=j				&#x2F;&#x2F;error
 		for(i=j;i&lt;n;i++)
 			if(a[i]&lt;a[p]) 
 				p=j;		&#x2F;&#x2F;error
@@ -274,8 +198,7 @@ void fun(int a[],int n)
 			a[j]=t;
 	}
 }
-main()
-{
+main(){
 	int a[N]={9,6,8,3,-1},i,m=5;
 	printf(&quot;排序前的数据：&quot;);
 	for(i=0;i&lt;m;i++)
@@ -288,28 +211,22 @@ main()
 	printf(&quot;\n&quot;);
 }</code></pre>
 <p>答：本题采用了选择排序法。错误(1)：p=j后面应加分号。错误(2)：根据选择排序法的逻辑，此处应将i赋给p。 </p>
-<h3 id="四、程序设计题-共24分"><a href="#四、程序设计题-共24分" class="headerlink" title="四、程序设计题(共24分)"></a>四、程序设计题(共24分)</h3><p>学生的记录由学号和成绩组成，N名学生的数据已在主函数中放入结构体数组s中，请编写函数fun，它的功能是：按分数的高低排列学生的记录，高分在前。 注意： 请勿改动主函数main和其他函数中的任何内容，仅在函数fun的花括号中填入所编写的若干语句。<br>【试题源程序】</p>
+<h3 id="四、程序设计题-共24分"><a href="#四、程序设计题-共24分" class="headerlink" title="四、程序设计题(共24分)"></a>四、程序设计题(共24分)</h3><p>学生的记录由学号和成绩组成，N名学生的数据已在主函数中放入结构体数组s中，请编写函数fun，它的功能是：按分数的高低排列学生的记录，高分在前。注意：请勿改动主函数main和其他函数中的任何内容，仅在函数fun的花括号中填入所编写的若干语句。<br>【试题源程序】</p>
 <pre><code>#include &lt;stdio.h&gt;
 #define N 16
-typedef struct
-{
+typedef struct{
 	char num[10];
 	int s;
 }STREC;
-
-int fun(STREC a[])
-{
+int fun(STREC a[]){
 }
-
-main()
-{
+main(){
 	STREC s[N]={&#39;{&quot;GA005&quot;,85},{&quot;GA003&quot;,76},{&quot;GA002&quot;,69},{&quot;GA004&quot;,85},{&quot;GA001&quot;,91},{&quot;GA007&quot;,72},{&quot;GA008&quot;,64},{&quot;GA006&quot;,87},{&quot;GA015&quot;,85},{&quot;GA013&quot;,91},{&quot;GA012&quot;,64},{&quot;GA014&quot;,91},{&quot;GA011&quot;,66},{&quot;GA017&quot;,64},{&quot;GA018&quot;,64},{&quot;GA016&quot;,72}&#39;}; 
 	int i;
 	FILE *out;
 	fun(s);
 	printf(&quot;The data after sorted：\n&quot;);
-	for(i=0;i&lt;N;i++)
-	{
+	for(i=0;i&lt;N;i++){
 		if((i)%4==0)
 			printf(&quot;\n&quot;);
 		printf(&quot;%s %4d&quot;,s[i].num,s[i].s);
@@ -317,14 +234,12 @@ main()
 	printf(&quot;\n&quot;);
 }
 答： 
-int fun(STREC a[]) 
-{
+int fun(STREC a[]){
 	STREC tmp;
 	int i,j;
 	for(i=0;i&lt;N;i++) 
 		for(j=i+1;j&lt;N;j++) 
-			if(a[i].s&lt;a[j].s)
-			{
+			if(a[i].s&lt;a[j].s){
 				tmp=a[i];
 				a[i]=a[j];
 				a[j]=tmp;
@@ -332,7 +247,141 @@ int fun(STREC a[])
     return 1;
 }</code></pre>
 <p>采用冒泡排序的方法，对结构体中按照成绩s进行降序排列，将其结果仍存入当前结构体中。</p>
-</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/05/19/14-3C_Exem/">soya2.github.io/2020/05/19/14-3C_Exem/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/C语言/">C语言</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、选择题-每题1分-共40分"><span class="toc-number">1.</span> <span class="toc-text">一、选择题(每题1分,共40分)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是-C-。"><span class="toc-number">1.1.</span> <span class="toc-text">2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是(C)。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8．有以下程序："><span class="toc-number">1.2.</span> <span class="toc-text">8．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10．有以下程序："><span class="toc-number">1.3.</span> <span class="toc-text">10．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15．有以下程序："><span class="toc-number">1.4.</span> <span class="toc-text">15．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19．以下选项中正确的语句组是-D-。"><span class="toc-number">1.5.</span> <span class="toc-text">19．以下选项中正确的语句组是(D)。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20．有以下程序："><span class="toc-number">1.6.</span> <span class="toc-text">20．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30．若函数中有定义语句：int-k-，则-B-。"><span class="toc-number">1.7.</span> <span class="toc-text">30．若函数中有定义语句：int k;，则(B)。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33．有以下程序："><span class="toc-number">1.8.</span> <span class="toc-text">33．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34．有以下程序："><span class="toc-number">1.9.</span> <span class="toc-text">34．有以下程序：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36．有以下程序："><span class="toc-number">1.10.</span> <span class="toc-text">36．有以下程序：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、程序填空题-共18分"><span class="toc-number">2.</span> <span class="toc-text">二、程序填空题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、程序修改题-共18分"><span class="toc-number">3.</span> <span class="toc-text">三、程序修改题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、程序设计题-共24分"><span class="toc-number">4.</span> <span class="toc-text">四、程序设计题(共24分)</span></a></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2020/05/20/14-9C_Exem/">&lt; 14年9月二级C语言真题及详解</a><a class="next" href="/2020/05/01/Datasource2/">数据结构考纲识记理解内容（下） &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
+<h2 id="九月"><a href="#九月" class="headerlink" title="九月"></a>九月</h2><h3 id="一、选择题-每题1分，共40分"><a href="#一、选择题-每题1分，共40分" class="headerlink" title="一、选择题(每题1分，共40分)"></a>一、选择题(每题1分，共40分)</h3><p>1．下列关于C语言文件的叙述中正确的是<br>A．文件由一系列数据依次排列组成，只能构成二进制文件    B．文件由结构序列组成，可以构成二进制文件或本文件<br><strong>C．文件由数据序列组成，可以构成二进制文件或文本文件</strong>    D．文件由字符序列组成，其类型只能是文本文件<br>C语言将文件看作是个字符(字节)的序列，即由一个一个字符(字节)数据顺序组成。根据数据的组成形式，可将文件分为两种：①ASCII文件，又称文本(text)文件，它的每个字节可放一个ASCII码，代表一个字符；②二进制文件，是把内存中的数据按其在内存中的存储形式原样输出到磁盘上存放。</p>
+<p>10．下面结构体的定义语句中，错误的是<br>A．struct ord{int x;int y;int z;};struct ord a;<br><strong>B．struct ord{int x;int y;int z;}struct ord a;</strong><br>C．struct ord{int x;int y;int z;}a;<br>D．struct {int x;int y;int z;}a;<br>结构体变量的定义有3种方法：1.定义结构体类型的同时定义结构体变量；2.使用无名结构体类型定义结构体变量；3.先定义结构体类型，后定义结构体变量。</p>
+<p>12．以下函数findmax拟实现在数组中查找最大值并作为函数值返回，但程序中有错导致不能实现预定功能。</p>
+<pre><code>#define MIN -2147483647
+int findmax(int x[],int n){
+    int i,max;
+    for(i=0;i&lt;n;i++){
+        max=MIN;
+        if(max &lt; x[i])
+            max=x[i];
+    }
+    return max;
+}</code></pre>
+<p>造成错误的原因是<br>A．定义语句int i，max；中,max未赋初值<br>B．赋值语句max＝MIN；中，不应给max赋MIN值<br>C．语句if(max&lt;x[i])max＝x[i]；中,判断条件设置错误<br><strong>D．赋值语句max＝MIN；放错了位置</strong></p>
+<h4 id="13．设有定义：char-c；以下选项中能够使字符型指针c正确指向一个字符串的是"><a href="#13．设有定义：char-c；以下选项中能够使字符型指针c正确指向一个字符串的是" class="headerlink" title="13．设有定义：char *c；以下选项中能够使字符型指针c正确指向一个字符串的是"></a>13．设有定义：char *c；以下选项中能够使字符型指针c正确指向一个字符串的是</h4><p><strong>A．char str[]=”string”;c=str;</strong>    B．scanf(“%s”,c);<br>C．c=getchar();                  D．*c=”string”;<br>B项scanf( )函数是将c定义为一个字符数组的数组名，C是将c定义为一个字符型变量，D项是在指针定义时为它赋值，是不合法的，所以BCD三项都不正确。A项定义字符数组str，再将字符数组str的首地址赋给字符型指针c，正确。</p>
+<h4 id="15．下列函数的功能是"><a href="#15．下列函数的功能是" class="headerlink" title="15．下列函数的功能是"></a>15．下列函数的功能是</h4><pre><code>fun(char *a,char *b){
+    while((*b=*a)!=′\0′){
+        a++;
+        b++;
+    }
+}</code></pre>
+<p><strong>A．将a所指字符串赋给b所指空间</strong><br>B．使指针b指向a所指字符串<br>C．将a所指字符串和b所指字符串进行比较<br>D．检查a和b所指字符串中是否有′\0′<br>函数fun中a和b是两个字符型指针，在while语句的表达式中将指针a所指向的字符赋给指针b所指向的内存单元，再判断该字符是不是字符串中的结尾符，若不是，则字符指针a和b分别自增，再执行循环语句，直至b所指向的字符为字符串中的空字符。</p>
+<p>17．有以下程序：</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+main(){
+    char str[][20]={&quot;One * World&quot;,&quot;One*Dream!&quot;},*p=str[1];
+    printf(&quot;%d,&quot;,strlen(p));
+    printf(&quot;%s\n&quot;,p);
+}</code></pre>
+<p>程序运行后的输出结果是<br>A．9，One*World    B．9，One*Dream！    <strong>C．10，One*Dream!</strong>    D．10，One*World</p>
+<p>20．有以下程序：</p>
+<pre><code>#include &lt;stdio.h&gt;
+main(){
+    int c=0,k;
+    for(k=1;k&lt;3;k++)
+        switch(k){
+            default：c+=k;
+            case 2：c++;break;
+            case 4：c+=2;break;
+        }
+    printf(&quot;%d\n&quot;,c);
+}</code></pre>
+<p>程序运行后的输出结果是<strong>3</strong><br>default后没有break则继续执行下一项。</p>
+<h4 id="22．下面是有关C语言字符数组的描述，其中错误的是-D-。"><a href="#22．下面是有关C语言字符数组的描述，其中错误的是-D-。" class="headerlink" title="22．下面是有关C语言字符数组的描述，其中错误的是(D)。"></a>22．下面是有关C语言字符数组的描述，其中错误的是(D)。</h4><p>A．不可以用赋值语句给字符数组名赋字符串<br>B．可以用输入语句把字符串整体输入给字符数组<br>C．字符数组中的内容不一定是字符串<br><strong>D．字符数组只能存放字符串</strong><br>C语言中，字符数组可以用来存放单个的字符或者字符串。</p>
+<h4 id="23．若有定义语句：int-a-4-10-，-p，-q-4-；且0≤i-lt-4，则错误的赋值是"><a href="#23．若有定义语句：int-a-4-10-，-p，-q-4-；且0≤i-lt-4，则错误的赋值是" class="headerlink" title="23．若有定义语句：int a[4][10]，*p，*q[4]；且0≤i&lt;4，则错误的赋值是"></a>23．若有定义语句：int a[4][10]，*p，*q[4]；且0≤i&lt;4，则错误的赋值是</h4><p><strong>A．p＝a</strong>    B．q[i]＝a[i]    C．p＝a[i]    D．p＝&amp;a[2][1]<br>二维数组名是指向指针的指针，所以a和q都为指向指针的指针，而p为指向int类型的指针，p和a不同类型，故p=a赋值语句错误。其余选项可以正确赋值，其中D项是用取地址符&amp;返回整数的地址，然后赋值给p。</p>
+<p>24．以下程序段中，与语句：k＝a&gt;b？(b&gt;c？1∶0)∶0；功能相同的是<br><strong>A．if((a&gt;b)&amp;&amp;(b&gt;c))k=1; else k=0;</strong><br>B．if((a&gt;b)||(b&gt;c)),k=1; else k=0;<br>C．if(a&lt;=b)k=0; else if(b&lt;=c)k=1;<br>D．if(a&gt;b)k=1; else if(b&gt;c)k=1; else k=0;</p>
+<h4 id="35．设有以下函数："><a href="#35．设有以下函数：" class="headerlink" title="35．设有以下函数："></a>35．设有以下函数：</h4><p>void fun(int n, char *s){……} 则下面对函数指针的定义和赋值均是正确的是<br><strong>A．void (*pf)();pf=fun;</strong>    B．void *pf();pf=fun;<br>C．void *pf();*pf=fun;    D．void (*pf)(int,char);pf=&fun;<br>函数指针的一般定义形式为：数据类型(*指针变量名)( )。D项，void(*pf)(int，char)带有两个数据类型，不符合函数指针定义。</p>
+<h4 id="39．设有定义："><a href="#39．设有定义：" class="headerlink" title="39．设有定义："></a>39．设有定义：</h4><p>int a＝1，b＝2，c＝3；，以下语句中执行效果与其他三个不同的是<br>A．if(a＞b)c＝a,a＝b,b＝c;    B．if(a＞b){c＝a,a＝b,b＝c;}<br><strong>C．if(a＞b)c＝a;a＝b;b＝c;</strong>    D．if(a＞b){c＝a;a＝b;b＝c;}<br>if语句仅作用于紧随其后的那条语句或者是复合语句的内容，A项，执行三条语句组成的复合语句；BD两项执行大括号中的三条语句；而C项只执行c=a。</p>
+<h3 id="二、程序填空题-共18分-1"><a href="#二、程序填空题-共18分-1" class="headerlink" title="二、程序填空题(共18分)"></a>二、程序填空题(共18分)</h3><p>N个有序整数数列已放在一维数组中，给定下列程序中，函数fun()的功能是：利用折半查找法查找整数m在数组中的位置。若找到，则返回其下标值；反之，则返回“Not be found！”。 折半查找法的基本算法是：每次查找前先确定数组中待确定的范围：low和high(low&lt;high),然后把m与中间位置(mid)中元素的值进行比较。如果m的值大于中间位置元素中的值，则下一次的查找范围放在中间位置之后的元素中；反之，下次查找范围落在中间位置之前的元素中。直到low&gt;high ，查找结束。注意：请勿改动主函数main和其他函数中的任何内容，仅在函数fun的横线上填入所编写的若干表达式或语句。<br>【试题源程序】</p>
+<pre><code>#include &lt;stdio.h&gt;
+#define N 10
+int fun(int a[],int m){
+    int low=0,high=N-1,mid;
+    while(low&lt;=high){
+        mid=_______;
+        if(m&lt;a[mid])
+            high=________;
+        else if(m&gt;a[mid])
+            low=mid+1;
+        else
+            return(mid);
+    }
+    _______ (-1);
+} 
+main(){
+    int i,a[N]={-3,4,7,9,13,24,67,89,100,180},k,m;
+    printf(&quot;a数组中的数据如下：&quot;);
+    for(i=0;i&lt;N;i++)
+        printf(&quot;%d&quot;,a[i]);
+    printf(&quot;Enter m：&quot;);
+    scanf(&quot;%d&quot;,&amp;m);
+    k=fun(a,m);
+    if(k&gt;=0)
+        printf(&quot;m=%d,index=%d\n&quot;,m,k);
+    else
+        printf(&quot;Not be found\n&quot;);
+}</code></pre>
+<p>答：【1】(low+high)/2 【2】mid-1 【3】return</p>
+<h3 id="三、程序修改题-共18分-1"><a href="#三、程序修改题-共18分-1" class="headerlink" title="三、程序修改题(共18分)"></a>三、程序修改题(共18分)</h3><p>下列给定程序中，函数fun()的功能是计算并输出high以内的素数之和。high由主函数传给fun( )函数。例如：若high的值为100，则函数的解为1060。请改正程序中的错误，使它能得到正确结果。 注意： 不要改动main函数，不得增行或删行，也不得更改程序的结构。<br>【试题源程序】</p>
+<pre><code>#include &lt;conio.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+int fun(int high){
+    int sum=0,n=0,j,yes;
+    while(high&gt;=2){
+        yes=1;
+        for(j=2;j&lt;=high&#x2F;2;j++)
+            if high%j==0{   &#x2F;&#x2F;error
+                yes=0;
+                break;
+            }
+        if(yes==0){         &#x2F;&#x2F;error
+            sum+=high;
+            n++;
+        }
+        high--;
+    }
+    return sum;
+}
+main(){
+    printf(&quot;%d\n&quot;,fun(100));
+}</code></pre>
+<p>答：错误(1)：if语句的两侧要加括号;错误(2)：yes为1时，说明被判断的数是素数，要累加到sum。</p>
+<h3 id="四、程序设计题-共24分-1"><a href="#四、程序设计题-共24分-1" class="headerlink" title="四、程序设计题(共24分)"></a>四、程序设计题(共24分)</h3><p>请编写函数fun，其功能是：计算并输出3到n之间(含3和n)所有素数的平方根之和。例如，在主函数中从键盘给n输入100后，输出为：sum＝148.874270。 注意： 要求n的值大于2但不大于100。部分源程序给出如下。 请勿改动主函数main和其他函数中的任何内容，仅在函数fun的花括号中填入所编写的若干语句。<br>【试题源程序】</p>
+<pre><code>#include &lt;math.h&gt;
+#include &lt;stdio.h&gt;
+double fun(int n){
+} 
+main(){
+    int n;
+    double sum;
+    printf(&quot;\n\nInput n：&quot;);
+    scanf(&quot;%d&quot;,&amp;n);
+    sum=fun(n);
+    printf(&quot;\n\nsum=%f\n\n&quot;,sum);
+}
+答： 
+double fun(int n){
+    int i,j;
+    double s=0;
+    if(n&gt;2&amp;&amp;n&lt;=100){
+        for(i=3;i&lt;=n;i++){
+            for(j=2;j&lt;i;j++)
+                if(i%j==0)
+                    break;
+            if(j==i)
+                s=s+sqrt(i);
+        }
+        return s;
+    }
+    return (-1);
+}</code></pre>
+<p>【解析】程序是计算并输出3到n之间(含3和n)所有素数的平方根之和，所以fun应当具有判断一个数是否为素数的功能，可以利用sqrt()函数。</p>
+</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/05/19/14-3C_Exem/">soya2.github.io/2020/05/19/14-3C_Exem/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/C语言/">C语言</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#三月"><span class="toc-number">1.</span> <span class="toc-text">三月</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、选择题-每题1分-共40分"><span class="toc-number">1.1.</span> <span class="toc-text">一、选择题(每题1分,共40分)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是"><span class="toc-number">1.1.1.</span> <span class="toc-text">2．设函数中有整型变量n，为保证其在未赋值的情况下初值为0，应选择的存储类别是</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8．有以下程序：若文本文件filea-txt中原有内容为：hello，则运行以上程序后，文件filea-txt中的内容为abc"><span class="toc-number">1.1.2.</span> <span class="toc-text">8．有以下程序：若文本文件filea.txt中原有内容为：hello，则运行以上程序后，文件filea.txt中的内容为abc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10．有以下程序：程序运行后的输出结果是7-5"><span class="toc-number">1.1.3.</span> <span class="toc-text">10．有以下程序：程序运行后的输出结果是7.5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15．有以下程序：输出结果是1-3"><span class="toc-number">1.1.4.</span> <span class="toc-text">15．有以下程序：输出结果是1,3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19．以下选项中正确的语句组是"><span class="toc-number">1.1.5.</span> <span class="toc-text">19．以下选项中正确的语句组是</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20．有以下程序：输出结果是3，5，3，5"><span class="toc-number">1.1.6.</span> <span class="toc-text">20．有以下程序：输出结果是3，5，3，5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30．若函数中有定义语句：int-k-，则"><span class="toc-number">1.1.7.</span> <span class="toc-text">30．若函数中有定义语句：int k;，则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33．有以下程序：输出结果是1，3，3"><span class="toc-number">1.1.8.</span> <span class="toc-text">33．有以下程序：输出结果是1，3，3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是567"><span class="toc-number">1.1.9.</span> <span class="toc-text">34．有以下程序：字母A的ASCII码值为65，程序运行后的结果是567</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36．有以下程序：输出结果是aegi"><span class="toc-number">1.1.10.</span> <span class="toc-text">36．有以下程序：输出结果是aegi</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、程序填空题-共18分"><span class="toc-number">1.2.</span> <span class="toc-text">二、程序填空题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、程序修改题-共18分"><span class="toc-number">1.3.</span> <span class="toc-text">三、程序修改题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、程序设计题-共24分"><span class="toc-number">1.4.</span> <span class="toc-text">四、程序设计题(共24分)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九月"><span class="toc-number">2.</span> <span class="toc-text">九月</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、选择题-每题1分，共40分"><span class="toc-number">2.1.</span> <span class="toc-text">一、选择题(每题1分，共40分)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13．设有定义：char-c；以下选项中能够使字符型指针c正确指向一个字符串的是"><span class="toc-number">2.1.1.</span> <span class="toc-text">13．设有定义：char *c；以下选项中能够使字符型指针c正确指向一个字符串的是</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15．下列函数的功能是"><span class="toc-number">2.1.2.</span> <span class="toc-text">15．下列函数的功能是</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22．下面是有关C语言字符数组的描述，其中错误的是-D-。"><span class="toc-number">2.1.3.</span> <span class="toc-text">22．下面是有关C语言字符数组的描述，其中错误的是(D)。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23．若有定义语句：int-a-4-10-，-p，-q-4-；且0≤i-lt-4，则错误的赋值是"><span class="toc-number">2.1.4.</span> <span class="toc-text">23．若有定义语句：int a[4][10]，*p，*q[4]；且0≤i&lt;4，则错误的赋值是</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35．设有以下函数："><span class="toc-number">2.1.5.</span> <span class="toc-text">35．设有以下函数：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39．设有定义："><span class="toc-number">2.1.6.</span> <span class="toc-text">39．设有定义：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、程序填空题-共18分-1"><span class="toc-number">2.2.</span> <span class="toc-text">二、程序填空题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、程序修改题-共18分-1"><span class="toc-number">2.3.</span> <span class="toc-text">三、程序修改题(共18分)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、程序设计题-共24分-1"><span class="toc-number">2.4.</span> <span class="toc-text">四、程序设计题(共24分)</span></a></li></ol></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2020/05/23/EN_exem/">&lt; 英语试题</a><a class="next" href="/2020/05/01/Datasource2/">数据结构考纲识记理解内容（下） &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
 .v a { color: #0F9FB4; }
 .v a:hover { color: #216C73; }
 .v li { list-style: inherit; }
