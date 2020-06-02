@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="soya2.github.io/"/>
-  <updated>2020-05-23T07:45:24.215Z</updated>
+  <updated>2020-06-02T12:05:11.460Z</updated>
   <id>soya2.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言知识点</title>
+    <link href="soya2.github.io/2020/06/02/C/"/>
+    <id>soya2.github.io/2020/06/02/C/</id>
+    <published>2020-06-02T12:01:08.000Z</published>
+    <updated>2020-06-02T12:05:11.460Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章-C语言概述&quot;&gt;&lt;a href=&quot;#第一章-C语言概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 C语言概述&quot;&gt;&lt;/a&gt;第一章
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>英语试题</title>

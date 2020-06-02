@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>C语言知识点 | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">C语言知识点</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/06/02/C/">2020-06-02</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h3 id="第一章-C语言概述"><a href="#第一章-C语言概述" class="headerlink" title="第一章 C语言概述"></a>第一章 C语言概述</h3><p>C语言程序设计总体上必须清楚:</p>
+<ol>
+<li>程序结构是三种:顺序结构,循环结构(三个循环结构),选择结构(if 和 switch)</li>
+<li>计算机的数据在电脑中保存是以二进制的形式。数据存放的位置就是 它的地址.</li>
+<li>bit位 是指为0 或者1。byte字节,1byte = 8bit.</li>
+<li>一定要记住 二进制 如何划成 十进制。<blockquote>
+<p>二进制转十进制采用权相加法，2的几次方由在它的前面还有几位，那么它的次数就是为几；<br>比如1011010转成十进制，1*26+0*25+1*24+1*23+0*22+1*21+0*20 = 64+0+16+8+0+2+0 = 90<br>概念常考到：</p>
+</blockquote>
+</li>
+<li>编译预处理不是C语言的一部分,不占用运行时间。C语言编译的程序称为源程序，它以ASCII数值存放在文本文件中。<h3 id="第二章-数据类型、运算符和表达式、位运算"><a href="#第二章-数据类型、运算符和表达式、位运算" class="headerlink" title="第二章 数据类型、运算符和表达式、位运算"></a>第二章 数据类型、运算符和表达式、位运算</h3></li>
+<li>合法的用户标识符考查：C语言是区分大小写<br> 合法的用户标识符要求是由字母，数字，下划线组成。并且第一个必须为字母或则是下划线。<br> 关键字不可以作为用户标识符号。<strong>迷惑你的地方If是可以做为用户标识符。因为If中的第一个字母大写了，所以不是关键字。</strong></li>
+<li>实型数据的合法形式：<br> 333e-1 就是合法的，且数据是2.333×<br> 考试口诀：e前e后必有数，e后必为整数。</li>
+<li>字符数据的合法形式：<br> ‘1’ 是字符占一个字节，”1”是字符串占两个字节(含有一个结束符号’\0’)。<br> ‘0’ 的ASCII数值表示为48，’A’的ASCII数值是65，’a’的ASCII数值是97。</li>
+<li>整型一般是4个字节, 字符型是一个字节，双精度一般是8个字节。</li>
+<li>转义字符的考查：<br>在程序中 int a = 0x6d，是把一个十六进制的数给变量a，注意这里的0x必须存在。<br>在程序中 int a = 06d(错了), 是一个八进制的形式。<br>在转义字符中，’\x6d’ 才是合法的，0不能写，并且x是小写。’\141’ 是合法的。<br>‘\208’是非法的，因为不可能出现8，八进制是没有8的，逢8进1。<br>转义字符的意义 ASCII码值(十进制)<br>\a 响铃(BEL) 007<br>\b 退格(BS) 008<br>\f 换页(FF) 012<br>\n 换行(LF) 010<br>\r 回车(CR) 013<br>\t 水平制表(HT) 009<br>\v 垂直制表(VT) 011<br>\ 反斜杠 092<br>? 问号字符 063<br>&#39; 单引号字符 039<br>&quot; 双引号字符 034<br>\0 空字符(NULL) 000<br>\ddd 任意字符 三位八进制<br>\xhh 任意字符 二位十六进制</li>
+<li>强制类型转换：<br> 一定是 (int)a 不是int(a)，<strong>类型上一定有括号</strong>。<br> 注意(int)(a+b)和(int)a+b 的区别。前是把a+b转型，后是把a转型再加b。</li>
+<li>表达式的考查：<br> 是表达式就一定有数值。<br> 赋值表达式：表达式数值是最左边的数值，a=b=5;该表达式为5，常量不可以赋值。</li>
+</ol>
+<p><strong>逗号表达式：优先级别最低</strong>;表达式的数值是逗号最右边的那个表达式的数值。<br>例：(2，3，4)的表达式的数值就是4。</p>
+<ol start="8">
+<li>位运算的考查：<br>方法：几乎所有的位运算的题目都要按这个流程来处理（先把十进制变成二进制再变成十进制）。<br>例1：　char a = 6, b;<br>　　　　b = a&lt;&lt;2;<br>这种题目的计算是先要把a的十进制6转化成二进制110，再做位运算。将a的二进制向左移2位，后面补0，变为11000=24，所以b=24。<br>一定要记住，在没有舍去数据的时候，&lt;&lt;左移一位表示乘以2；&gt;&gt;右移一位表示除以2。<br>C语言中位运算符之间，按优先级顺序排列为<br>1    ~ 取反运算<br>2    &lt;&lt;、&gt;&gt; 左移右移运算<br>3    &amp; 与运算，同1为1，有0为0<br>4    ^ 异或运算，不同为1，相同为0<br>5    | 或运算，有1为1，同0为0<br>6    &amp;=、^=、|=、&lt;&lt;=、&gt;&gt;=</li>
+<li>%符号两边要求是整数。不是整数就错了。</li>
+<li>两种取整丢小数的情况：<br>int a =1.6；<br>(int)a；　<h3 id="第三章-顺序程序设计"><a href="#第三章-顺序程序设计" class="headerlink" title="第三章 顺序程序设计"></a>第三章 顺序程序设计</h3></li>
+<li>printf函数的格式考查：<br> 宽度的%md,%m.nf，左对齐%-md等修饰。%ld对应 long int；%lf 对应double。</li>
+<li>putchar ,getchar 函数的考查：<br>char  a = getchar() 是没有参数的，从键盘得到你输入的一个字符给变量a。<br>putchar(‘y’)把字符y输出到屏幕中。</li>
+<li><strong>如何实现保留三位小数，第四位四舍五入的程序</strong><br> x=(int)(x*1000+0.5)/1000.0<br> 这个有推广的意义，注意 x = (int)x 这样是把小数部分去掉。<h3 id="第四章-选择结构程序设计"><a href="#第四章-选择结构程序设计" class="headerlink" title="第四章 选择结构程序设计"></a>第四章 选择结构程序设计</h3>注意：c语言中是用非0表示逻辑真的，用0表示逻辑假的。</li>
+<li>关系表达式：<br> 表达式的数值只能为1（表示为真），或0（表示假）,当关系的表达是为真的时候得到1。如 9&gt;8这个是真的，所以表达式的数值就是1；</li>
+<li>逻辑表达式：<br> 只能为1（表示为真），或0（表示假）<br>共有&amp;&amp;   ||   ！ 三种逻辑运算符号。</li>
+</ol>
+<p><strong>！&gt;&amp;&amp;&gt;||  优先的级别。</strong><br><strong>注意短路现象:设整型变量</strong> m,n,a,b,c,d 均为1，执行 (m=a&gt;b)&amp;&amp;(n=c&gt;d)后, m,n 的值是0，1。<br>要表示 x 是比0大，比10小的方法。<strong>0&lt;x&lt;10是不可以的</strong>。是先计算0&lt;x 得到的结果为1或为0；再用0，或1与10比较得到的总是真（为1）。所以一定要用 (0&lt;x)&amp;&amp;(x&lt;10)表示比0大比10小。</p>
+<ol start="3">
+<li>if 语句<br> else 是与最接近的if且没有else的相组合的。</li>
+<li>条件表达式： 正确书写if（条件表达式）计算整数位数、5个数输出一行<br> 表达式1 ？表达式2 ：表达式3<br> 注意是当非0时候是表达式2的数值，当为0时就是表达式3的数值。<h3 id="第五章-循环结构程序"><a href="#第五章-循环结构程序" class="headerlink" title="第五章 循环结构程序"></a>第五章 循环结构程序</h3></li>
+<li>三种循环结构：<br> for(;;){}  while(){}  do{}while();三种。<br> 写程序的时候一定要注意，循环一定要有结束的条件，否则成了死循环。<br> <strong>do-while();的分号一定不能够丢。</strong></li>
+<li>while((c=getchar())!=’\n’) 和 while(c=getchar() != ‘\n’）的差别<br>先看a = 3 != 2  和 (a=3)!=2 的区别：<br>(<strong>!=号的级别高于=号</strong> 所以第一个先计算 3!=2) 第一个a的数值是得到的1；第二个a的数值是3。注意: 括号在这里的重要性。<h3 id="第六章-数组"><a href="#第六章-数组" class="headerlink" title="第六章 数组"></a>第六章 数组</h3></li>
+<li>一维数组的重要概念：<br>对a[10]这个数组的讨论。<br>a表示数组名，是第一个元素的地址，也就是元素a[0]的地址a==&amp;a[0]<br>a是地址常量，所以只要出现a++，或者是a=a+2赋值的都是错误的。<br>a是一维数组名，所以它是列指针，也就是说a+1是跳一列。</li>
+<li>对a[3][3]的讨论。<br>a[0]、a[1]、a[2]也都是地址常量，不可以对它进行赋值操作，同时它们都是列指针，a[0]+1，a[1]+1，a[2]+1都是跳一列。<br>注意a和a[0] 、a[1]、a[2]是不同的，它们的基类型是不同的。前者是一行元素，后三者是一列元素。<br>数组的初始化，一维和二维的，一维可以不写，<strong>二维第二个一定要写</strong><br>int a[]={1，2} 合法。  int a[][4]={2，3，4}合法。  但int a[4][]={2，3，4}非法。<h3 id="第七章-函数"><a href="#第七章-函数" class="headerlink" title="第七章 函数"></a>第七章 函数</h3>函数：是具有一定功能的一个程序块；</li>
+<li>一定要注意参数之间的传递<br> <strong>实参和形参之间 传数值，和传地址的差别。</strong><br> 传数值的话，形参的变化不会改变实参的变化。<br> 传地址的话，形参的变化就会有可能改变实参的变化。</li>
+<li>函数声明的考查：<br>一定要有：函数名，函数的返回类型，函数的参数类型。<strong>不一定要有：形参的名称。</strong></li>
+<li>局部、全局变量和存储分类<blockquote>
+<p>【定义】局部变量是在函数内部或复合语句内部定义的变量。<br>【作用域】局部变量只能在定义它的函数（或复合语句）中使用，离开了定义，它的函数（或复合语句）就不能使用。<br>局部变量有 4种存储类型：自动型；寄存器型；静态型；外部参照型。</p>
+</blockquote>
+</li>
+<li>局部变量的生存期<blockquote>
+<p>自动（auto）型局部变量是分配在内存的堆栈段，内存的堆栈在程序中的运行过程中是重复使用的。<br>寄存器局部变量也是自动类局部变量。它与 auto 变量的区别在于，寄存器型变量是分配在 CPU 通用寄存器中的，而不是像一般变量那样占用内存单元。<br>静态局部型变量是分配在内存的数据段中的它们在程序开始运行时就分配了固定的存储单元，在程序运行过程中不释放，直到程序运行结束才释放它所占的存储空间。</p>
+</blockquote>
+</li>
+<li>全局变量及其作用域和生存期<blockquote>
+<p>【定义】全局变量在函数外部定义的变量，全局变量也称为外部变量。<br>【作用域】全局变量是在函数外部任意位置上定义的变量，它的作用域是从变量定义位置开始，到整个源文件结束为止。<br>全局变量的生存期是整个程序的运行期间。</p>
+</blockquote>
+</li>
+<li>静态全局变量<blockquote>
+<p>静态全局变量是用 static 说明符说明的全局变量，静态全局变量只限于本编译单位使用，不能被其他编译单位所引用。</p>
+</blockquote>
+</li>
+<li>外部函数与静态函数<br>在 C 语言中可以用 extern 和 static 关键字来说明函数。<br>（1）外部函数<br>外部函数是用extern 说明符说明函数返回值的函数，extern 说明可以省略，一般的函数都隐含说明为extern。<br>（2）静态函数<br>静态函数是用 static 说明符说明函数返回值的函数。<h3 id="第八章-指针"><a href="#第八章-指针" class="headerlink" title="第八章 指针"></a>第八章 指针</h3></li>
+<li>int *p 中*p和p的差别：<br>p是当作地址来使用，*p可以当做变量；*作用是取地址p里的值<br>*p++ 和 (*p)++的之间的差别：改错题目中很重要<br>*p++是 地址会变化。P的值是变化的，(*p)++ 是数值会要变化。P的值（地址）不变                   </li>
+<li><strong>数组名、函数名和常量名</strong><br> 数组名：表示第一个元素的地址。数组名不可以自加，它是地址常量名。（考了很多次）<br> 函数名：表示该函数的入口地址。<br> 字符串常量名：表示第一个字符的地址。</li>
+<li>二维数组中的行指针<br>int a[1][2]；<br>其中a现在就是一个行指针，a+1跳一行数组元素。  搭配(*)p[2]指针<br>a[0]，a[1]现在就是一个列指针。a[0]+1 跳一个数组元素。搭配*p[2]指针数组使用<br>a[2]变成*(a+2)、a[2][3]变成*(a+2)[3]和*(*(a+2)+3)</li>
+</ol>
+</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/06/02/C/">soya2.github.io/2020/06/02/C/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/C语言/">C语言</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一章-C语言概述"><span class="toc-number">1.</span> <span class="toc-text">第一章 C语言概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章-数据类型、运算符和表达式、位运算"><span class="toc-number">2.</span> <span class="toc-text">第二章 数据类型、运算符和表达式、位运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三章-顺序程序设计"><span class="toc-number">3.</span> <span class="toc-text">第三章 顺序程序设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第四章-选择结构程序设计"><span class="toc-number">4.</span> <span class="toc-text">第四章 选择结构程序设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第五章-循环结构程序"><span class="toc-number">5.</span> <span class="toc-text">第五章 循环结构程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第六章-数组"><span class="toc-number">6.</span> <span class="toc-text">第六章 数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第七章-函数"><span class="toc-number">7.</span> <span class="toc-text">第七章 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第八章-指针"><span class="toc-number">8.</span> <span class="toc-text">第八章 指针</span></a></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="next" href="/2020/05/23/EN_exem/">英语试题 &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
+.v a { color: #0F9FB4; }
+.v a:hover { color: #216C73; }
+.v li { list-style: inherit; }
+.v .vwrap { border: 1px solid #223441; border-radius: 0; }
+.v .vwrap:hover { box-shadow: 0 0 6px 1px #223441; }
+.v .vbtn { border-radius: 0; color: #cecece; background: none; }
+.v .vlist .vcard .vh { border-bottom-color: #293D4E; }
+.v .vwrap .vheader .vinput { border-bottom-color: #223441; }
+.v .vwrap .vheader .vinput:focus { border-bottom-color: #339EB4; }
+.v code, .v pre,.v .vlist .vcard .vhead .vsys { background: #203240; }
+.v code, .v pre { color: #F0F0F0; font-size: 95%; }
+.v .vlist .vcard .vcontent.expand:before { background: linear-gradient(180deg,hsla(206,33%,19%,0),hsla(206,33%,19%,.9)); }
+.v .vlist .vcard .vcontent.expand:after { background: hsla(206,33%,19%,.9); }</style><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'',
+  appKey:'',
+  lang: 'zh-cn',
+  placeholder:'ヾﾉ≧∀≦)o Come on, say something...',
+  avatar:'identicon',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></section><footer><p>Copyright © 2016 - 2020 <a href="/." rel="nofollow">恰恰书库</a> | <strong><a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></strong><br><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span></span> <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span></span> | Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a>Theme with<a rel="nofollow" target="_blank" href="https://github.com/litreily/snark-hexo"> snark.</a></p></footer></div></div></div><script type="text/javascript" src="/plugins/prettify/prettify.js"></script><script type="text/javascript" src="/js/search.js"></script><script type="text/javascript" src="/js/top.js"></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+    search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"></body></html>
