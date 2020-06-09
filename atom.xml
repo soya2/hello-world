@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="soya2.github.io/"/>
-  <updated>2020-06-02T12:05:11.460Z</updated>
+  <updated>2020-06-09T14:40:59.759Z</updated>
   <id>soya2.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>政治识记</title>
+    <link href="soya2.github.io/2020/06/09/Public/"/>
+    <id>soya2.github.io/2020/06/09/Public/</id>
+    <published>2020-06-09T13:15:08.000Z</published>
+    <updated>2020-06-09T14:40:59.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;马克思前言&quot;&gt;&lt;a href=&quot;#马克思前言&quot; class=&quot;headerlink&quot; title=&quot;马克思前言&quot;&gt;&lt;/a&gt;马克思前言&lt;/h3&gt;&lt;h4 id=&quot;一、时代课题原因&quot;&gt;&lt;a href=&quot;#一、时代课题原因&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C语言知识点</title>
@@ -46,7 +69,7 @@
     <link href="soya2.github.io/2020/05/23/EN_exem/"/>
     <id>soya2.github.io/2020/05/23/EN_exem/</id>
     <published>2020-05-23T06:16:08.000Z</published>
-    <updated>2020-05-23T07:45:24.215Z</updated>
+    <updated>2020-06-09T13:17:52.704Z</updated>
     
     <summary type="html">
     
@@ -54,7 +77,8 @@
       
         
         
-          &lt;h3 id=&quot;谓语及非谓语&quot;&gt;&lt;a href=&quot;#谓语及非谓语&quot; class=&quot;headerlink&quot; title=&quot;谓语及非谓语&quot;&gt;&lt;/a&gt;谓语及非谓语&lt;/h3&gt;&lt;p&gt;1.He went from door to door, &lt;strong&gt;__&lt;/strong&gt;
+          &lt;h3 id=&quot;时态&quot;&gt;&lt;a href=&quot;#时态&quot; class=&quot;headerlink&quot; title=&quot;时态&quot;&gt;&lt;/a&gt;时态&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;现在(do/does)&lt;br&gt;客观真理 习惯性 经常反复发生 动作 状态
         
       
     
@@ -140,111 +164,11 @@
   </entry>
   
   <entry>
-    <title>OS题目解析</title>
-    <link href="soya2.github.io/2019/10/15/osC/"/>
-    <id>soya2.github.io/2019/10/15/osC/</id>
-    <published>2019-10-15T14:05:17.000Z</published>
-    <updated>2019-10-17T14:32:29.481Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;计算公式&quot;&gt;&lt;a href=&quot;#计算公式&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统（四）同步与互斥</title>
-    <link href="soya2.github.io/2019/10/14/os4/"/>
-    <id>soya2.github.io/2019/10/14/os4/</id>
-    <published>2019-10-14T14:08:59.000Z</published>
-    <updated>2019-10-14T14:08:27.215Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;进程间相互作用&quot;&gt;&lt;a href=&quot;#进程间相互作用&quot; class=&quot;headerlink&quot; title=&quot;进程间相互作用&quot;&gt;&lt;/a&gt;进程间相互作用&lt;/h3&gt;&lt;h4 id=&quot;相关进程和无关进程&quot;&gt;&lt;a href=&quot;#相关进程和无关进程&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统（三）进程与线程</title>
-    <link href="soya2.github.io/2019/09/01/os3/"/>
-    <id>soya2.github.io/2019/09/01/os3/</id>
-    <published>2019-09-01T05:32:59.000Z</published>
-    <updated>2019-09-13T15:14:49.614Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;多道程序设计&quot;&gt;&lt;a href=&quot;#多道程序设计&quot; class=&quot;headerlink&quot; title=&quot;多道程序设计&quot;&gt;&lt;/a&gt;多道程序设计&lt;/h3&gt;&lt;h4 id=&quot;程序的顺序执行&quot;&gt;&lt;a href=&quot;#程序的顺序执行&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统（二）运行环境</title>
-    <link href="soya2.github.io/2019/08/31/os2/"/>
-    <id>soya2.github.io/2019/08/31/os2/</id>
-    <published>2019-08-31T05:42:42.000Z</published>
-    <updated>2019-08-31T13:38:09.826Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;处理器（CPU）&quot;&gt;&lt;a href=&quot;#处理器（CPU）&quot; class=&quot;headerlink&quot; title=&quot;处理器（CPU）&quot;&gt;&lt;/a&gt;处理器（CPU）&lt;/h3&gt;&lt;h4 id=&quot;构成&quot;&gt;&lt;a href=&quot;#构成&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>操作系统（一）概论</title>
     <link href="soya2.github.io/2019/08/27/os1/"/>
     <id>soya2.github.io/2019/08/27/os1/</id>
     <published>2019-08-27T13:24:57.000Z</published>
-    <updated>2019-08-31T12:50:07.430Z</updated>
+    <updated>2020-06-09T13:24:35.437Z</updated>
     
     <summary type="html">
     
@@ -252,7 +176,7 @@
       
         
         
-          &lt;h3 id=&quot;操作系统的定义&quot;&gt;&lt;a href=&quot;#操作系统的定义&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;概述及公式&quot;&gt;&lt;a href=&quot;#概述及公式&quot; class=&quot;headerlink&quot; title=&quot;概述及公式&quot;&gt;&lt;/a&gt;概述及公式&lt;/h2&gt;&lt;h3 id=&quot;计算公式&quot;&gt;&lt;a href=&quot;#计算公式&quot; class=&quot;headerlink&quot;
         
       
     
