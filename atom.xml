@@ -3,7 +3,7 @@
   <title>恰恰书库</title>
   
   <subtitle>恰恰书库</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="soya2.github.io/atom.xml" rel="self"/>
   
   <link href="soya2.github.io/"/>
   <updated>2020-08-26T09:25:25.757Z</updated>
@@ -23,21 +23,19 @@
     <published>2020-08-26T07:22:58.000Z</published>
     <updated>2020-08-26T09:25:25.757Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h2 id=&quot;SQL常用命令&quot;&gt;&lt;a href=&quot;#SQL常用命令&quot; class=&quot;headerlink&quot; title=&quot;SQL常用命令&quot;&gt;&lt;/a&gt;SQL常用命令&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;code&gt;mysql -u[用户名]
+    <summary type="html">&lt;h2 id=&quot;SQL常用命令&quot;&gt;&lt;a href=&quot;#SQL常用命令&quot; class=&quot;headerlink&quot; title=&quot;SQL常用命令&quot;&gt;&lt;/a&gt;SQL常用命令&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;code&gt;mysql -u[用户名]</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="SQL" scheme="soya2.github.io/tags/SQL/"/>
+    <category term="SQL" scheme="soya2.github.io/tags/SQL/"/>
     
   </entry>
   
@@ -48,21 +46,19 @@
     <published>2020-06-26T15:14:08.000Z</published>
     <updated>2020-06-30T13:17:40.290Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h2 id=&quot;初级上&quot;&gt;&lt;a href=&quot;#初级上&quot; class=&quot;headerlink&quot; title=&quot;初级上&quot;&gt;&lt;/a&gt;初级上&lt;/h2&gt;&lt;h3 id=&quot;第一课&quot;&gt;&lt;a href=&quot;#第一课&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h2 id=&quot;初级上&quot;&gt;&lt;a href=&quot;#初级上&quot; class=&quot;headerlink&quot; title=&quot;初级上&quot;&gt;&lt;/a&gt;初级上&lt;/h2&gt;&lt;h3 id=&quot;第一课&quot;&gt;&lt;a href=&quot;#第一课&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="日语" scheme="soya2.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+    <category term="日语" scheme="soya2.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -73,17 +69,15 @@
     <published>2020-06-09T13:15:08.000Z</published>
     <updated>2020-06-09T14:40:59.759Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;马克思前言&quot;&gt;&lt;a href=&quot;#马克思前言&quot; class=&quot;headerlink&quot; title=&quot;马克思前言&quot;&gt;&lt;/a&gt;马克思前言&lt;/h3&gt;&lt;h4 id=&quot;一、时代课题原因&quot;&gt;&lt;a href=&quot;#一、时代课题原因&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h3 id=&quot;马克思前言&quot;&gt;&lt;a href=&quot;#马克思前言&quot; class=&quot;headerlink&quot; title=&quot;马克思前言&quot;&gt;&lt;/a&gt;马克思前言&lt;/h3&gt;&lt;h4 id=&quot;一、时代课题原因&quot;&gt;&lt;a href=&quot;#一、时代课题原因&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
@@ -96,21 +90,19 @@
     <published>2020-06-02T12:01:08.000Z</published>
     <updated>2020-06-02T12:05:11.460Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;第一章-C语言概述&quot;&gt;&lt;a href=&quot;#第一章-C语言概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 C语言概述&quot;&gt;&lt;/a&gt;第一章
+    <summary type="html">&lt;h3 id=&quot;第一章-C语言概述&quot;&gt;&lt;a href=&quot;#第一章-C语言概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 C语言概述&quot;&gt;&lt;/a&gt;第一章</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -121,21 +113,19 @@
     <published>2020-05-01T12:51:17.000Z</published>
     <updated>2020-05-29T13:10:59.055Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;第八章-树和二叉树&quot;&gt;&lt;a href=&quot;#第八章-树和二叉树&quot; class=&quot;headerlink&quot; title=&quot;第八章 树和二叉树&quot;&gt;&lt;/a&gt;第八章 树和二叉树&lt;/h3&gt;&lt;h4 id=&quot;树的定义、相关术语、表示方法和存储结构。（识记）&quot;&gt;&lt;a
+    <summary type="html">&lt;h3 id=&quot;第八章-树和二叉树&quot;&gt;&lt;a href=&quot;#第八章-树和二叉树&quot; class=&quot;headerlink&quot; title=&quot;第八章 树和二叉树&quot;&gt;&lt;/a&gt;第八章 树和二叉树&lt;/h3&gt;&lt;h4 id=&quot;树的定义、相关术语、表示方法和存储结构。（识记）&quot;&gt;&lt;a</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -146,21 +136,19 @@
     <published>2020-05-01T01:50:17.000Z</published>
     <updated>2020-05-29T13:02:48.678Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;第一章-绪论&quot;&gt;&lt;a href=&quot;#第一章-绪论&quot; class=&quot;headerlink&quot; title=&quot;第一章 绪论&quot;&gt;&lt;/a&gt;第一章 绪论&lt;/h3&gt;&lt;h4 id=&quot;数据、数据元素、数据项的基本概念（识记）&quot;&gt;&lt;a
+    <summary type="html">&lt;h3 id=&quot;第一章-绪论&quot;&gt;&lt;a href=&quot;#第一章-绪论&quot; class=&quot;headerlink&quot; title=&quot;第一章 绪论&quot;&gt;&lt;/a&gt;第一章 绪论&lt;/h3&gt;&lt;h4 id=&quot;数据、数据元素、数据项的基本概念（识记）&quot;&gt;&lt;a</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -171,21 +159,19 @@
     <published>2019-08-27T13:24:57.000Z</published>
     <updated>2020-06-09T13:24:35.437Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h2 id=&quot;概述及公式&quot;&gt;&lt;a href=&quot;#概述及公式&quot; class=&quot;headerlink&quot; title=&quot;概述及公式&quot;&gt;&lt;/a&gt;概述及公式&lt;/h2&gt;&lt;h3 id=&quot;计算公式&quot;&gt;&lt;a href=&quot;#计算公式&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h2 id=&quot;概述及公式&quot;&gt;&lt;a href=&quot;#概述及公式&quot; class=&quot;headerlink&quot; title=&quot;概述及公式&quot;&gt;&lt;/a&gt;概述及公式&lt;/h2&gt;&lt;h3 id=&quot;计算公式&quot;&gt;&lt;a href=&quot;#计算公式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -196,21 +182,19 @@
     <published>2019-07-23T09:02:58.000Z</published>
     <updated>2019-08-04T10:58:21.965Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;与C语言的一些区别&quot;&gt;&lt;a href=&quot;#与C语言的一些区别&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h3 id=&quot;与C语言的一些区别&quot;&gt;&lt;a href=&quot;#与C语言的一些区别&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="Python" scheme="soya2.github.io/tags/Python/"/>
+    <category term="Python" scheme="soya2.github.io/tags/Python/"/>
     
   </entry>
   
@@ -221,21 +205,19 @@
     <published>2019-07-22T02:50:08.000Z</published>
     <updated>2020-05-19T13:07:52.294Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;题目十一&quot;&gt;&lt;a href=&quot;#题目十一&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h3 id=&quot;题目十一&quot;&gt;&lt;a href=&quot;#题目十一&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -246,17 +228,15 @@
     <published>2018-10-19T08:32:04.000Z</published>
     <updated>2020-04-18T04:25:56.336Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;《上帝掷骰子吗》-2019-07-10&quot;&gt;&lt;a href=&quot;#《上帝掷骰子吗》-2019-07-10&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h3 id=&quot;《上帝掷骰子吗》-2019-07-10&quot;&gt;&lt;a href=&quot;#《上帝掷骰子吗》-2019-07-10&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     

@@ -1,23 +1,23 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>C语言100题相关解题思路(部分) | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>C语言100题相关解题思路(部分) | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">C语言100题相关解题思路(部分)</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2019/07/22/Frist-Artical/">2019-07-22</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h3 id="题目十一"><a href="#题目十一" class="headerlink" title="题目十一"></a>题目十一</h3><p><strong>有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？</strong><br>该题的关键在于兔子的数量符合<strong>斐波那契数列</strong>-即第n位数等于n-1位和n-2位数相加。同样是通过相互赋值的方法改变相加数的位置。<br>例如1+1=2视为x+y=z，下一次计算应该为1+2=3，则相当于把y值当成新的x，把z看成新的y<br>即x+y=z<br>    x+y=z<br>相关代码</p>
 <pre><code>printf(&quot;%d\n&quot;,y*2); &#x2F;&#x2F;打印出第一位数，乘二是因为一对兔子为两只
-for(i=0;i&lt;30;i++)
+for(i&#x3D;0;i&lt;30;i++)
 {
-    z=x+y;
+    z&#x3D;x+y;
     printf(&quot;%d\n&quot;,z*2); &#x2F;&#x2F;注意先打印后赋值
-    x=y;
-    y=z;
+    x&#x3D;y;
+    y&#x3D;z;
 }</code></pre>
 
 <h3 id="题目十二"><a href="#题目十二" class="headerlink" title="题目十二"></a>题目十二</h3><p><strong>判断101-200之间有多少个素数，并输出所有素数。</strong><br><strong>素数</strong>-指除了自身和1外，不能被其他数整除的数。主要是用两个for循环嵌套，首先循环查找的范围，然后循环查找的条件，查找条件比较简单，把被判断数从2除到201，每被整除就标记一次，不能被整除的就continue结束。除完之后查看标记的次数，根据素数的特性，凡是标记次数小于2的就输出概述，并另标记打印的次数(即说明找到了一个素数)。<br>相关代码</p>
-<pre><code>int a=101,b,c,e=0;
+<pre><code>int a&#x3D;101,b,c,e&#x3D;0;
 for(;a&lt;201;a++)
 {
-    c=0; &#x2F;&#x2F;初始化整除标记为0；
-    for(b=2;b &lt; a+1 ;b++) &#x2F;&#x2F;不检验被1整除，从2到a+1即可，若到a则测不到被自身整除
+    c&#x3D;0; &#x2F;&#x2F;初始化整除标记为0；
+    for(b&#x3D;2;b &lt; a+1 ;b++) &#x2F;&#x2F;不检验被1整除，从2到a+1即可，若到a则测不到被自身整除
     {
-        if(a%b==0) &#x2F;&#x2F;查找整除
+        if(a%b&#x3D;&#x3D;0) &#x2F;&#x2F;查找整除
             c++; &#x2F;&#x2F;每整除一次就标记+1
         else
             continue; &#x2F;&#x2F;不能被整除就结束循环
@@ -28,7 +28,7 @@ for(;a&lt;201;a++)
         printf(&quot;%d\n&quot;,a);
     }
 }
-printf(&quot;e=%d\n&quot;,e); &#x2F;&#x2F;素数标记打印要放在所有循环外面</code></pre>
+printf(&quot;e&#x3D;%d\n&quot;,e); &#x2F;&#x2F;素数标记打印要放在所有循环外面</code></pre>
 
 <h3 id="题目二十六"><a href="#题目二十六" class="headerlink" title="题目二十六"></a>题目二十六</h3><p><strong>利用递归方法求5!</strong><br>利用函数嵌套的递归算法，主要理清楚递归次数和值的关系，阶乘的关系如下<br>   函数递归的最终返回值<br>                 ↑ 值120返回<br>         【f(4) ×5】<br>             ↑ 值24返回<br>     【f(3) ×4】<br>         ↑ 值6返回<br>  【f(2)×3】<br>      ↑ 值2返回<br>【f(1)×2】<br>f(0)时返回1给f(1)；然后依次返回<br>相关代码</p>
 <pre><code>int fact(int x);&#x2F;&#x2F;使用函数前需要提前声明
@@ -37,7 +37,7 @@ int main()
 {
     int a,b;
     scanf(&quot;%d&quot;,&amp;a);&#x2F;&#x2F;将程序升级成阶乘计算器，输入数a，并计算a的阶乘
-    b=fact(a);
+    b&#x3D;fact(a);
     printf(&quot;%d\n&quot;,b);
     return 0;
 }
@@ -48,50 +48,50 @@ int fact(int x)&#x2F;&#x2F;函数定义
     if(x&gt;0)
     {
         x--;&#x2F;&#x2F;需要在递归前先进行条件变换，不然会造成递归死循环
-        y=fact(x)*(x+1);&#x2F;&#x2F;阶乘递归的关键，过程见上
+        y&#x3D;fact(x)*(x+1);&#x2F;&#x2F;阶乘递归的关键，过程见上
         return y;&#x2F;&#x2F;最后返回的y值
     }
-    return 1;&#x2F;&#x2F;x==0时返回1值
+    return 1;&#x2F;&#x2F;x&#x3D;&#x3D;0时返回1值
 }*&#x2F;&#x2F;无意义星号，在Markdown代表字符标签，与冲突程序语言冲突</code></pre>
 
 <h3 id="题目四十一"><a href="#题目四十一" class="headerlink" title="题目四十一"></a>题目四十一</h3><p><strong>学习static定义静态变量的用法</strong><br>静态变量和普通的变量（即auto自动变量）的区别只有是否会自动释放内存。auto变量在函数调用结束的时候会自动释放，而static变量则不会释放，而是会一直存放在静态储存区，方便下次调用，适合类似求阶乘的算法，但这样的代价是内存得不到释放，同时降低了代码的可读性。<br>相关代码</p>
 <pre><code>int main()
 {
     int i;
-    for(i=0;i&lt;3;i++)
+    for(i&#x3D;0;i&lt;3;i++)
         varer();
 }
 
 void varer()
 {
-    int var=0;
-    static int static_var=0;
-    printf(&quot;var=%d\n&quot;,var);
-    printf(&quot;static_var=%d\n&quot;,static_var);
+    int var&#x3D;0;
+    static int static_var&#x3D;0;
+    printf(&quot;var&#x3D;%d\n&quot;,var);
+    printf(&quot;static_var&#x3D;%d\n&quot;,static_var);
     var++;
     static_var++;
 }</code></pre>
 <p>程序执行后得到的值是<br>0 1<br>0 2<br>0 3<br>即auto变量var使用后释放，并再次赋值为0，而static_var不释放，一直自加到循环结束</p>
 <h3 id="题目四十三"><a href="#题目四十三" class="headerlink" title="题目四十三"></a>题目四十三</h3><p><strong>学习使用static的另一用法。</strong><br>static变量和普通变量的另一区别就是储存的位置不同，内存供用户使用可分为三个部分<br>程序区、静态存储区和动态存储区。auto变量放在动态存储区，static变量放在静态存储区。<br>还有声明变量时不要放在同一层级即同一个花括号内<br>相关代码</p>
 <pre><code>int i;
-for(i=0;i&lt;3;i++)
+for(i&#x3D;0;i&lt;3;i++)
 {
-    int num=2; &#x2F;&#x2F;auto变量在循环内外都可运行，在内每次都为2，在外则是递增
-    printf(&quot;auto num=%d\n&quot;,num);
+    int num&#x3D;2; &#x2F;&#x2F;auto变量在循环内外都可运行，在内每次都为2，在外则是递增
+    printf(&quot;auto num&#x3D;%d\n&quot;,num);
     num++;
     &#x2F;&#x2F;若取消花括号会因为变量名相同而报错
     {
-        static int num=1;
-        printf(&quot;static num=%d\n\n&quot;,num);
+        static int num&#x3D;1;
+        printf(&quot;static num&#x3D;%d\n\n&quot;,num);
         num++;
     }
     &#x2F;&#x2F;从static变量声明起至花括号结束，所有相关语句均只与static变量有关
 }</code></pre>
 <p>相关代码2</p>
-<pre><code>int var=0;
+<pre><code>int var&#x3D;0;
 {
     var++; &#x2F;&#x2F;此时auto变量为1
-    static int var=10;
+    static int var&#x3D;10;
     var++; &#x2F;&#x2F;static变量为11
     var++; &#x2F;&#x2F;static变量为12
     printf(&quot;-%d\n&quot;,var); &#x2F;&#x2F;打印static变量的var
@@ -106,9 +106,9 @@ printf(&quot;%d\n&quot;,var);&#x2F;&#x2F;打印auto变量的var</code></pre>
     int n1,n2,n3;
     scanf(&quot;%d,%d,%d&quot;,&amp;n1,&amp;n2,&amp;n3);
     int *p1,*p2,*p3;
-    p1=&amp;n1; &#x2F;&#x2F;依次把变量地址赋值给指针，注意给指针赋值时变量要带地址符&amp;，指针不用带*号
-    p2=&amp;n2;
-    p3=&amp;n3;
+    p1&#x3D;&amp;n1; &#x2F;&#x2F;依次把变量地址赋值给指针，注意给指针赋值时变量要带地址符&amp;，指针不用带*号
+    p2&#x3D;&amp;n2;
+    p3&#x3D;&amp;n3;
     if(n1&gt;n2)
         trans(p1,p2);&#x2F;&#x2F;为了方便创建一个函数，此处的排序是由小到大
     if(n2&gt;n3)
@@ -122,13 +122,13 @@ printf(&quot;%d\n&quot;,var);&#x2F;&#x2F;打印auto变量的var</code></pre>
 void trans(int *p1,int *p2)
 {
     int s;
-    s=*p1; &#x2F;&#x2F;除声明的时侯，*p1指的都是该指针指向变量的值，例如此时\*p1指向n1，相当于s=n1
-    *p1=*p2;
-    *p2=s;
+    s&#x3D;*p1; &#x2F;&#x2F;除声明的时侯，*p1指的都是该指针指向变量的值，例如此时\*p1指向n1，相当于s&#x3D;n1
+    *p1&#x3D;*p2;
+    *p2&#x3D;s;
          &#x2F;&#x2F;若不加*号，即
-    &#x2F;&#x2F;s=p1; 
-    &#x2F;&#x2F;p1=p2; 
-    &#x2F;&#x2F;p2=s;
+    &#x2F;&#x2F;s&#x3D;p1; 
+    &#x2F;&#x2F;p1&#x3D;p2; 
+    &#x2F;&#x2F;p2&#x3D;s;
     &#x2F;&#x2F;意味只交换了指针变量的值，即让p1指向n2，p2指向n1，这样子在打印n1、2、3时还是输入时的值
 }</code></pre>
 
@@ -137,32 +137,32 @@ void trans(int *p1,int *p2)
 {
     int *max,*min,*p;
     int count;
-    max=min=array;
-    for(p=array+1;p&lt;=array+5;p++)&#x2F;&#x2F;单独数组名代表该数组的首地址，+5则代表数组下标为5的元素
+    max&#x3D;min&#x3D;array;
+    for(p&#x3D;array+1;p&lt;&#x3D;array+5;p++)&#x2F;&#x2F;单独数组名代表该数组的首地址，+5则代表数组下标为5的元素
     {
         if(*p&gt;*max)
-            max=p;
+            max&#x3D;p;
         else if(*p&lt;*min)
-            min=p;
+            min&#x3D;p;
     }
-    count=array[5];
-    array[5]=*min;
-    *min=count;
-    if(max!=array+5&amp;&amp;min!=array)
+    count&#x3D;array[5];
+    array[5]&#x3D;*min;
+    *min&#x3D;count;
+    if(max!&#x3D;array+5&amp;&amp;min!&#x3D;array)
     &#x2F;&#x2F;若数组是顺序的话，只交换头尾即可，所以检查max和min是否位于第一和最后一位
     {
-        count=array[0];
-        array[0]=*max;
-        *max=count;
+        count&#x3D;array[0];
+        array[0]&#x3D;*max;
+        *max&#x3D;count;
     }
 }*&#x2F;&#x2F;无意义星号，在Markdown代表字符标签，与冲突程序语言冲突</code></pre>
 
 <h3 id="题目六十八"><a href="#题目六十八" class="headerlink" title="题目六十八"></a>题目六十八</h3><p><strong>有n个整数，使其前面各数顺序向后移m个位置，最后m个数变成最前面的m个数</strong><br>例如1，2，3，4，5；m=2，结果就是4，5，1，2，3；<br>主要思路还是和上题类似，要注意指针地址的变换。函数内只能用指针交换位置，具体见注释<br>相关代码</p>
 <pre><code>int main()
 {
-    int a[5]={1,2,3,4,5};&#x2F;&#x2F;初始化数列
+    int a[5]&#x3D;{1,2,3,4,5};&#x2F;&#x2F;初始化数列
     Move(a,2);&#x2F;&#x2F;用函数来完成，设定移动两位，可更改
-    for(int i=0;i&lt;5;i++)
+    for(int i&#x3D;0;i&lt;5;i++)
         printf(&quot;%d\t&quot;,a[i]);
     printf(&quot;\n&quot;);
     return 0;
@@ -171,17 +171,17 @@ void trans(int *p1,int *p2)
 void Move(int a[],int m)
 {
     int *R,*S,count;&#x2F;&#x2F;声明后指针和前指针以及临时变量
-    for(int i=0;i &lt; m;i++)
+    for(int i&#x3D;0;i &lt; m;i++)
     {
-        R=a+4;&#x2F;&#x2F;将后指针放在数组的最后一项
-        count=*R;&#x2F;&#x2F;同时将值赋给临时变量
-        for(int j=4;j&gt;0;j--)&#x2F;&#x2F;每次移动数组内部必定移动四次，要从后往前循环
+        R&#x3D;a+4;&#x2F;&#x2F;将后指针放在数组的最后一项
+        count&#x3D;*R;&#x2F;&#x2F;同时将值赋给临时变量
+        for(int j&#x3D;4;j&gt;0;j--)&#x2F;&#x2F;每次移动数组内部必定移动四次，要从后往前循环
         {
-            S=a+(j-1);&#x2F;&#x2F;前指针依次向前移动
-            *R=*S;&#x2F;&#x2F;将前值赋给后值
-            R=S;&#x2F;&#x2F;后指针往前移，此时与前指针指向同一值
+            S&#x3D;a+(j-1);&#x2F;&#x2F;前指针依次向前移动
+            *R&#x3D;*S;&#x2F;&#x2F;将前值赋给后值
+            R&#x3D;S;&#x2F;&#x2F;后指针往前移，此时与前指针指向同一值
         }
-        *S=count;&#x2F;&#x2F;数组内交换完后把临时变量(即原最后值)赋给前指针，此时前指针指向第一值
+        *S&#x3D;count;&#x2F;&#x2F;数组内交换完后把临时变量(即原最后值)赋给前指针，此时前指针指向第一值
     }
 }*&#x2F;&#x2F;无意义星号，在Markdown代表字符标签，与冲突程序语言冲突</code></pre>
 
@@ -192,16 +192,16 @@ void Move(int a[],int m)
     float sum;
     int n;
     scanf(&quot;%d&quot;,&amp;n);
-    if(n%2==0)
+    if(n%2&#x3D;&#x3D;0)
     {
-        printf(&quot;even=&quot;);
-        sum=dcall(peven,n);
+        printf(&quot;even&#x3D;&quot;);
+        sum&#x3D;dcall(peven,n);
         &#x2F;&#x2F;函数声明在下面，这里先执行的是dcall函数，然后再执行参数中指向Peven函数的指针，下同
     }
     else
     {
-        printf(&quot;odd=&quot;);
-        sum=dcall(podd,n);
+        printf(&quot;odd&#x3D;&quot;);
+        sum&#x3D;dcall(podd,n);
     }
     printf(&quot;%f&quot;,sum);
 }
@@ -210,9 +210,9 @@ float peven(int n)
 {
     float s;
     int i;
-    s=1;
-    for(i=2;i&lt;=n;i+=2)
-        s+=1&#x2F;(float)i;
+    s&#x3D;1;
+    for(i&#x3D;2;i&lt;&#x3D;n;i+&#x3D;2)
+        s+&#x3D;1&#x2F;(float)i;
     return(s);
 }
 
@@ -220,16 +220,16 @@ float podd(int n)
 {
     float s;
     int i;
-    s=0;
-    for(i=1;i&lt;=n;i+=2)
-        s+=1&#x2F;(float)i;
+    s&#x3D;0;
+    for(i&#x3D;1;i&lt;&#x3D;n;i+&#x3D;2)
+        s+&#x3D;1&#x2F;(float)i;
     return(s);
 }
 
 float dcall(float (*fp)(),int n)
 {
     float s;
-    s=(*fp)(n);&#x2F;&#x2F;将指针指向的函数执行完后的返回值返回
+    s&#x3D;(*fp)(n);&#x2F;&#x2F;将指针指向的函数执行完后的返回值返回
     return(s);
 }</code></pre>
 
@@ -254,30 +254,30 @@ scanf(&quot;%c&quot;,a[0]);&#x2F;&#x2F;不合法</code></pre>
 int main()
 {
     SUT *HEAD,a,b,c,d,e,*P;
-    P=HEAD=&amp;a;
-    a.NEXT=&amp;b;
-    b.NEXT=NULL;
-    &#x2F;&#x2F;c.NEXT=&amp;d;  题目的要求为五个学生，但为了测试方便，故修改为两个
-    &#x2F;&#x2F;d.NEXT=&amp;e;
-    &#x2F;&#x2F;e.NEXT=NULL;
-    while(P!=NULL)
+    P&#x3D;HEAD&#x3D;&amp;a;
+    a.NEXT&#x3D;&amp;b;
+    b.NEXT&#x3D;NULL;
+    &#x2F;&#x2F;c.NEXT&#x3D;&amp;d;  题目的要求为五个学生，但为了测试方便，故修改为两个
+    &#x2F;&#x2F;d.NEXT&#x3D;&amp;e;
+    &#x2F;&#x2F;e.NEXT&#x3D;NULL;
+    while(P!&#x3D;NULL)
     {
         printf(&quot;please input number and name of the student:\n&quot;);
         scanf(&quot;%d,%s&quot;,&amp;P-&gt;num,&amp;P-&gt;name);
         &#x2F;&#x2F;注意地址符，详细见上，此处还要注意%s要写在最后，这样避免把‘，’算成字符造成错误，下同
         printf(&quot;please input three score:\n&quot;);
         scanf(&quot;%f,%f,%f&quot;,&amp;P-&gt;scoreA,&amp;P-&gt;scoreB,&amp;P-&gt;scoreC);
-        P-&gt;scoreADV=(P-&gt;scoreA+P-&gt;scoreB+P-&gt;scoreC)&#x2F;3;&#x2F;&#x2F;直接计算并存储平均成绩
-        P=P-&gt;NEXT;
+        P-&gt;scoreADV&#x3D;(P-&gt;scoreA+P-&gt;scoreB+P-&gt;scoreC)&#x2F;3;&#x2F;&#x2F;直接计算并存储平均成绩
+        P&#x3D;P-&gt;NEXT;
     }
-    P=HEAD;
+    P&#x3D;HEAD;
     FILE *F;
-    F=fopen(&quot;student&quot;,&quot;w&quot;);
-    while(P!=NULL)
+    F&#x3D;fopen(&quot;student&quot;,&quot;w&quot;);
+    while(P!&#x3D;NULL)
     {
         fprintf(F,&quot;%d-%s\n&quot;,P-&gt;num,P-&gt;name);
-        fprintf(F,&quot;A=%.2f,B=%.2f,C=%.2f,ADV=%.2f\n&quot;,P-&gt;scoreA,P-&gt;scoreB,P-&gt;scoreC,P-&gt;scoreADV);
-        P=P-&gt;NEXT;
+        fprintf(F,&quot;A&#x3D;%.2f,B&#x3D;%.2f,C&#x3D;%.2f,ADV&#x3D;%.2f\n&quot;,P-&gt;scoreA,P-&gt;scoreB,P-&gt;scoreC,P-&gt;scoreADV);
+        P&#x3D;P-&gt;NEXT;
     }
     fclose(F);
     return 0;
@@ -290,8 +290,8 @@ int main()
 <pre><code>int main()
 {
     int Ra,Rb;
-    Ra=1;
-    Rb=2;
+    Ra&#x3D;1;
+    Rb&#x3D;2;
     Function(Ra,Rb);
     return 0;
 }</code></pre>
@@ -303,7 +303,7 @@ int main()
 {
     int *Ra;
     int Rb;
-    Rb=2;
+    Rb&#x3D;2;
     Function(Ra,Rb);
     return 0;
 }*&#x2F;&#x2F;无意义星号，在Markdown代表字符标签，与冲突程序语言冲突</code></pre>
@@ -312,8 +312,8 @@ int main()
 <footer><strong>朱战立 数据结构—使用C语言</strong></footer></blockquote>
 
 <p>总结就是作为参数形参不能影响实参，但是只要将指针的地址作为参数直接修改地址就可以影响主函数中指针参数的所指向的地址。</p>
-<p>参考文档：<a href="https://www.jianshu.com/p/56d99a3049a5" target="_blank" rel="noopener">https://www.jianshu.com/p/56d99a3049a5</a><br>Sina博客原稿：<a href="http://blog.sina.com.cn/u/2292464751" target="_blank" rel="noopener">http://blog.sina.com.cn/u/2292464751</a></p>
-</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2019/07/22/Frist-Artical/">soya2.github.io/2019/07/22/Frist-Artical/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/C语言/">C语言</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目十一"><span class="toc-number">1.</span> <span class="toc-text">题目十一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目十二"><span class="toc-number">2.</span> <span class="toc-text">题目十二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目二十六"><span class="toc-number">3.</span> <span class="toc-text">题目二十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目四十一"><span class="toc-number">4.</span> <span class="toc-text">题目四十一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目四十三"><span class="toc-number">5.</span> <span class="toc-text">题目四十三</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目六十六"><span class="toc-number">6.</span> <span class="toc-text">题目六十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目六十七"><span class="toc-number">7.</span> <span class="toc-text">题目六十七</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目六十八"><span class="toc-number">8.</span> <span class="toc-text">题目六十八</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目七十六"><span class="toc-number">9.</span> <span class="toc-text">题目七十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#题目一百"><span class="toc-number">10.</span> <span class="toc-text">题目一百</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于函数的实参和形参，以及指针作为参数时的情况"><span class="toc-number">11.</span> <span class="toc-text">关于函数的实参和形参，以及指针作为参数时的情况</span></a></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2019/07/23/Python-Note/">&lt; Python_Note</a><a class="next" href="/2018/10/19/ReadNote/">阅读笔记 &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
+<p>参考文档：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/56d99a3049a5">https://www.jianshu.com/p/56d99a3049a5</a><br>Sina博客原稿：<a target="_blank" rel="noopener" href="http://blog.sina.com.cn/u/2292464751">http://blog.sina.com.cn/u/2292464751</a></p>
+</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2019/07/22/Frist-Artical/">soya2.github.io/2019/07/22/Frist-Artical/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%8D%81%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">题目十一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%8D%81%E4%BA%8C"><span class="toc-number">2.</span> <span class="toc-text">题目十二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E4%BA%8C%E5%8D%81%E5%85%AD"><span class="toc-number">3.</span> <span class="toc-text">题目二十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%9B%9B%E5%8D%81%E4%B8%80"><span class="toc-number">4.</span> <span class="toc-text">题目四十一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%9B%9B%E5%8D%81%E4%B8%89"><span class="toc-number">5.</span> <span class="toc-text">题目四十三</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%85%AD%E5%8D%81%E5%85%AD"><span class="toc-number">6.</span> <span class="toc-text">题目六十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%85%AD%E5%8D%81%E4%B8%83"><span class="toc-number">7.</span> <span class="toc-text">题目六十七</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%85%AD%E5%8D%81%E5%85%AB"><span class="toc-number">8.</span> <span class="toc-text">题目六十八</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E4%B8%83%E5%8D%81%E5%85%AD"><span class="toc-number">9.</span> <span class="toc-text">题目七十六</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E4%B8%80%E7%99%BE"><span class="toc-number">10.</span> <span class="toc-text">题目一百</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E5%8F%82%E5%92%8C%E5%BD%A2%E5%8F%82%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%8C%87%E9%92%88%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E6%97%B6%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">11.</span> <span class="toc-text">关于函数的实参和形参，以及指针作为参数时的情况</span></a></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2019/07/23/Python-Note/">&lt; Python_Note</a><a class="next" href="/2018/10/19/ReadNote/">阅读笔记 &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
 .v a { color: #0F9FB4; }
 .v a:hover { color: #216C73; }
 .v li { list-style: inherit; }
