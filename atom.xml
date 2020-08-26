@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="soya2.github.io/"/>
-  <updated>2020-06-28T13:38:30.077Z</updated>
+  <updated>2020-08-26T09:25:25.757Z</updated>
   <id>soya2.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SQL_Note</title>
+    <link href="soya2.github.io/2020/08/26/SQL_Note/"/>
+    <id>soya2.github.io/2020/08/26/SQL_Note/</id>
+    <published>2020-08-26T07:22:58.000Z</published>
+    <updated>2020-08-26T09:25:25.757Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;SQL常用命令&quot;&gt;&lt;a href=&quot;#SQL常用命令&quot; class=&quot;headerlink&quot; title=&quot;SQL常用命令&quot;&gt;&lt;/a&gt;SQL常用命令&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;code&gt;mysql -u[用户名]
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="SQL" scheme="soya2.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>新标日本语初级上</title>
     <link href="soya2.github.io/2020/06/26/NiHonGo/"/>
     <id>soya2.github.io/2020/06/26/NiHonGo/</id>
     <published>2020-06-26T15:14:08.000Z</published>
-    <updated>2020-06-28T13:38:30.077Z</updated>
+    <updated>2020-06-30T13:17:40.290Z</updated>
     
     <summary type="html">
     
