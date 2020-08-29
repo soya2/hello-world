@@ -44,7 +44,7 @@
     <link href="soya2.github.io/2020/06/26/NiHonGo/"/>
     <id>soya2.github.io/2020/06/26/NiHonGo/</id>
     <published>2020-06-26T15:14:08.000Z</published>
-    <updated>2020-06-30T13:17:40.290Z</updated>
+    <updated>2020-08-29T13:52:46.903Z</updated>
     
     
       
@@ -58,7 +58,7 @@
     
     
     
-    <category term="日语" scheme="soya2.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+    <category term="NiHonGo" scheme="soya2.github.io/tags/NiHonGo/"/>
     
   </entry>
   
@@ -67,7 +67,7 @@
     <link href="soya2.github.io/2020/06/09/Public/"/>
     <id>soya2.github.io/2020/06/09/Public/</id>
     <published>2020-06-09T13:15:08.000Z</published>
-    <updated>2020-06-09T14:40:59.759Z</updated>
+    <updated>2020-08-29T13:53:06.798Z</updated>
     
     
       
@@ -81,6 +81,8 @@
     
     
     
+    <category term="Public" scheme="soya2.github.io/tags/Public/"/>
+    
   </entry>
   
   <entry>
@@ -88,7 +90,7 @@
     <link href="soya2.github.io/2020/06/02/C/"/>
     <id>soya2.github.io/2020/06/02/C/</id>
     <published>2020-06-02T12:01:08.000Z</published>
-    <updated>2020-06-02T12:05:11.460Z</updated>
+    <updated>2020-08-29T13:52:23.807Z</updated>
     
     
       
@@ -102,7 +104,7 @@
     
     
     
-    <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    <category term="C_Language" scheme="soya2.github.io/tags/C-Language/"/>
     
   </entry>
   
@@ -111,7 +113,7 @@
     <link href="soya2.github.io/2020/05/01/Datasource2/"/>
     <id>soya2.github.io/2020/05/01/Datasource2/</id>
     <published>2020-05-01T12:51:17.000Z</published>
-    <updated>2020-05-29T13:10:59.055Z</updated>
+    <updated>2020-08-29T13:52:09.872Z</updated>
     
     
       
@@ -125,7 +127,7 @@
     
     
     
-    <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <category term="DataType" scheme="soya2.github.io/tags/DataType/"/>
     
   </entry>
   
@@ -134,7 +136,7 @@
     <link href="soya2.github.io/2020/05/01/Datasource1/"/>
     <id>soya2.github.io/2020/05/01/Datasource1/</id>
     <published>2020-05-01T01:50:17.000Z</published>
-    <updated>2020-05-29T13:02:48.678Z</updated>
+    <updated>2020-08-29T13:52:10.564Z</updated>
     
     
       
@@ -148,7 +150,7 @@
     
     
     
-    <category term="数据结构" scheme="soya2.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <category term="DataType" scheme="soya2.github.io/tags/DataType/"/>
     
   </entry>
   
@@ -157,7 +159,7 @@
     <link href="soya2.github.io/2019/08/27/os1/"/>
     <id>soya2.github.io/2019/08/27/os1/</id>
     <published>2019-08-27T13:24:57.000Z</published>
-    <updated>2020-06-09T13:24:35.437Z</updated>
+    <updated>2020-08-29T13:52:56.602Z</updated>
     
     
       
@@ -171,7 +173,7 @@
     
     
     
-    <category term="操作系统" scheme="soya2.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="OS" scheme="soya2.github.io/tags/OS/"/>
     
   </entry>
   
@@ -203,7 +205,7 @@
     <link href="soya2.github.io/2019/07/22/Frist-Artical/"/>
     <id>soya2.github.io/2019/07/22/Frist-Artical/</id>
     <published>2019-07-22T02:50:08.000Z</published>
-    <updated>2020-05-19T13:07:52.294Z</updated>
+    <updated>2020-08-29T13:52:34.384Z</updated>
     
     
       
@@ -217,7 +219,7 @@
     
     
     
-    <category term="C语言" scheme="soya2.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    <category term="C_Language" scheme="soya2.github.io/tags/C-Language/"/>
     
   </entry>
   
@@ -226,7 +228,7 @@
     <link href="soya2.github.io/2018/10/19/ReadNote/"/>
     <id>soya2.github.io/2018/10/19/ReadNote/</id>
     <published>2018-10-19T08:32:04.000Z</published>
-    <updated>2020-04-18T04:25:56.336Z</updated>
+    <updated>2020-08-29T13:53:20.247Z</updated>
     
     
       
@@ -239,6 +241,8 @@
     
     
     
+    
+    <category term="Note" scheme="soya2.github.io/tags/Note/"/>
     
   </entry>
   

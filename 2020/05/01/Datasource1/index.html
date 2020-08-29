@@ -1,6 +1,210 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="联系唯一邮箱：soya-kelaos@outlook.com"><meta name="baidu-site-verification"><title>数据结构考纲识记理解内容（上） | 恰恰书库</title><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"soya2.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="第一章 绪论数据、数据元素、数据项的基本概念（识记）数据是人们利用文字、数字及其他规定的符号对事物及其活动所做的抽象描述。表示一个事物的一组数据称作一个数据元素。构成数据元素的数据称作该数据的数据项。 数据结构的三种逻辑结构和两种存储结构表示方法（理解）数据元素之间的相互联系方式称为数据的逻辑结构逻辑结构分为线性结构、树状结构和图形结构三种。线性结构：除首尾数据元素外，每个数据元素只有一个唯一前驱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构考纲识记理解内容（上）">
+<meta property="og:url" content="soya2.github.io/2020/05/01/Datasource1/index.html">
+<meta property="og:site_name" content="恰恰书库">
+<meta property="og:description" content="第一章 绪论数据、数据元素、数据项的基本概念（识记）数据是人们利用文字、数字及其他规定的符号对事物及其活动所做的抽象描述。表示一个事物的一组数据称作一个数据元素。构成数据元素的数据称作该数据的数据项。 数据结构的三种逻辑结构和两种存储结构表示方法（理解）数据元素之间的相互联系方式称为数据的逻辑结构逻辑结构分为线性结构、树状结构和图形结构三种。线性结构：除首尾数据元素外，每个数据元素只有一个唯一前驱">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-01T01:50:17.000Z">
+<meta property="article:modified_time" content="2020-08-29T13:52:10.564Z">
+<meta property="article:author" content="Soya">
+<meta property="article:tag" content="DataType">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="soya2.github.io/2020/05/01/Datasource1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>数据结构考纲识记理解内容（上） | 恰恰书库</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="恰恰书库" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><link rel="stylesheet" type="text/css" href="/plugins/prettify/doxy.css"><script type="text/javascript" src="/js/ready.js" async></script><body><div class="mobile-head" id="mobile-head"><div class="navbar-icon"><span></span><span></span><span></span></div><div class="navbar-title"><a href="/">LITREILY</a></div><div class="navbar-search"><!--= show a circle here--></div></div><div class="h-wrapper" id="menu"><nav class="h-head box"><div class="m-hdimg"><a class="hdimg img" href="/"><img class="nofancybox" src="/img/profile.jpg" width="128" height="128"></a><h1 class="ttl"><a href="/">恰恰书库</a></h1></div><p class="m-desc">收录一些杂七杂八的东西</p><div class="m-nav"><ul><li><span class="dot">●</span><a href="/archives/">归档</a></li><li><span class="dot">●</span><a href="/tags/">标签</a></li><li><span class="dot">●</span><a href="/about/">关于</a></li><li><span class="dot">●</span><a href="/atom.xml">RSS</a></li><li class="m-sch"><form class="form" id="j-formsch" method="get"><input class="txt" type="text" id="local-search-input" name="q" value="搜索" onfocus="if(this.value=='搜索'){this.value='';}" onblur="if(this.value==''){this.value='搜索';}"><input type="text" style="display:none;"></form></li></ul><div id="local-search-result"></div></div></nav></div><div id="back2Top"><a class="fa fa-arrow-up" title="Back to top" href="#"></a></div><div class="box" id="container"><div class="l-wrapper"><div class="l-content box"><div class="l-post l-post-art"><article class="p-art"><div class="p-header box"><h1 class="p-title">数据结构考纲识记理解内容（上）</h1><div class="p-info"><span class="p-date"><i class="fa fa-calendar"></i><a href="/2020/05/01/Datasource1/">2020-05-01</a></span><span class="p-view" id="busuanzi_container_page_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_page_pv"></span></span></div></div><div class="p-content"><h3 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h3><h4 id="数据、数据元素、数据项的基本概念（识记）"><a href="#数据、数据元素、数据项的基本概念（识记）" class="headerlink" title="数据、数据元素、数据项的基本概念（识记）"></a>数据、数据元素、数据项的基本概念（识记）</h4><p><strong>数据</strong>是人们利用文字、数字及其他规定的<strong>符号</strong>对事物及其活动所做的<strong>抽象描述</strong>。<br>表示一个事物的一组数据称作一个<strong>数据元素</strong>。构成数据元素的数据称作该数据的<strong>数据项</strong>。</p>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">恰恰书库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">恰恰书库</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="soya2.github.io/2020/05/01/Datasource1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Soya">
+      <meta itemprop="description" content="联系唯一邮箱：soya-kelaos@outlook.com">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="恰恰书库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数据结构考纲识记理解内容（上）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-01 09:50:17" itemprop="dateCreated datePublished" datetime="2020-05-01T09:50:17+08:00">2020-05-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-29 21:52:10" itemprop="dateModified" datetime="2020-08-29T21:52:10+08:00">2020-08-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h3><h4 id="数据、数据元素、数据项的基本概念（识记）"><a href="#数据、数据元素、数据项的基本概念（识记）" class="headerlink" title="数据、数据元素、数据项的基本概念（识记）"></a>数据、数据元素、数据项的基本概念（识记）</h4><p><strong>数据</strong>是人们利用文字、数字及其他规定的<strong>符号</strong>对事物及其活动所做的<strong>抽象描述</strong>。<br>表示一个事物的一组数据称作一个<strong>数据元素</strong>。构成数据元素的数据称作该数据的<strong>数据项</strong>。</p>
 <h4 id="数据结构的三种逻辑结构和两种存储结构表示方法（理解）"><a href="#数据结构的三种逻辑结构和两种存储结构表示方法（理解）" class="headerlink" title="数据结构的三种逻辑结构和两种存储结构表示方法（理解）"></a>数据结构的三种逻辑结构和两种存储结构表示方法（理解）</h4><p>数据元素之间的相互联系方式称为<strong>数据的逻辑结构</strong><br>逻辑结构分为<strong>线性结构</strong>、<strong>树状结构</strong>和<strong>图形结构</strong>三种。<br>线性结构：除首尾数据元素外，每个数据元素只有一个<strong>唯一前驱</strong>数据元素<strong>唯一后继</strong>数据。<br>树状结构：除根节点外，每个数据元素只有一个<strong>唯一前驱</strong>和<strong>零或若干个后继</strong>。<br>图形结构：每个数据元素可有<strong>零或若干个前驱</strong>和<strong>零或若干个后继</strong>。</p>
 <p>数据元素在计算机中的存储方式称为<strong>数据的存储结构</strong><br>存储结构有两种：<strong>顺序存储结构</strong>和<strong>链式存储结构</strong>。<br>顺序存储结构是指把数据元素存储在一块<strong>连续地址空间</strong>的内存中。<br>链式存储结构使用<strong>指针</strong>把相互直接关联的点链接起来，逻辑上相邻的数据元素在物理上不一定相邻。</p>
 <p>数据结构被形式的定义为(D,R)，其中D是<strong>数据</strong>的有限集合，R是D上的<strong>关系</strong>的有限集合。</p>
@@ -26,41 +230,202 @@
 <h4 id="特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）"><a href="#特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）" class="headerlink" title="特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）"></a>特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）</h4><p>存在许多值相同或许多零元素，且分布有一定规律的矩阵称为<strong>特殊矩阵</strong>。<br>对于一个m * n = s的矩阵，设t为矩阵中非零元素的总和，满足t &lt;&lt; s(即t * 10^2 &lt; s)的矩阵称为<strong>稀疏矩阵</strong>。</p>
 <p>若存在一个n * n的矩阵，且内部数据沿主对角线对称，则将其称为<strong>n阶对称矩阵</strong>。<br>当对称矩阵由一维数组映射时，则有k = 下标坐标：<br><strong>k = i(i + 1)/2 + j - 1 当i &gt;= j时，即上半区含中线</strong><br><strong>k = n(n + 1)/2 当i &lt; j时，即下半区</strong></p>
 <p>稀疏矩阵的压缩存储结构主要有<strong>三元组顺序表</strong>和<strong>三元组链表</strong>。<br>三元组顺序表形式：{1,3,11},{1,5,17},{2,2,25},{4,1,19}，其中三元素第一位为行号，第二位为列号，第三位为元素值。<br>三元组链表形式：形如数组，每个元素表示行号，数组的值为指针，每个行号作为头指针衍生出单链表，存储列号和元素值。</p>
-</div><div class="p-copyright"><blockquote><div class="p-copyright-author"><span class="p-copyright-key">本文作者：</span><span class="p-copytight-value"><a href="mailto:litreily@163.com">Soya</a></span></div><div class="p-copyright-link"><span class="p-copyright-key">本文链接：</span><span class="p-copytight-value"><a href="/2020/05/01/Datasource1/">soya2.github.io/2020/05/01/Datasource1/</a></span></div><div class="p-copyright-note"><span class="p-copyright-key">版权声明：</span><span class="p-copytight-value">本博客所有文章除特殊声明外，均采用<a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/"> CC BY-NC 4.0 </a>许可协议。转载请注明出处 <a href="soya2.github.io">Soya的博客</a>！</span></div></blockquote></div></article><div class="p-info box"><span class="p-tags"><i class="fa fa-tag"></i><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><aside id="toc"><div class="toc-title">目录</div><nav><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BB%AA%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">第一章 绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E3%80%81%E6%95%B0%E6%8D%AE%E5%85%83%E7%B4%A0%E3%80%81%E6%95%B0%E6%8D%AE%E9%A1%B9%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">数据、数据元素、数据项的基本概念（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E4%B8%89%E7%A7%8D%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E5%92%8C%E4%B8%A4%E7%A7%8D%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">数据结构的三种逻辑结构和两种存储结构表示方法（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%A6%82%E5%BF%B5%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">数据结构和抽象数据类型的概念（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%81%E6%80%A7%E8%B4%A8%E5%92%8C%E7%9B%AE%E6%A0%87%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">算法的概念、性质和目标（识记）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text">第二章 线性表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">线性表的定义和抽象数据类型（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%EF%BC%8C%E9%A1%BA%E5%BA%8F%E8%A1%A8%E4%B8%8A%E7%9A%84%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E7%AD%89%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%85%B6%E5%B9%B3%E5%9D%87%E6%97%B6%E9%97%B4%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">线性表的顺序表示和实现。顺序表的定义和存储结构，顺序表上的插入、删除等操作及其平均时间性能分析。（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E5%BC%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%E5%8D%95%E9%93%BE%E8%A1%A8%E3%80%81%E5%BE%AA%E7%8E%AF%E5%8D%95%E9%93%BE%E8%A1%A8%E3%80%81%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E5%92%8C%E6%93%8D%E4%BD%9C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">线性表的链式表示和实现。单链表、循环单链表、双向链表的存储结构和操作实现。（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8%E4%B8%8A%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%BB%BA%E8%A1%A8%E3%80%81%E6%9F%A5%E6%89%BE%E3%80%81%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4%E7%AD%89%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">单链表上实现的建表、查找、插入和删除等基本算法。（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83%EF%BC%8C%E5%90%84%E8%87%AA%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">2.5.</span> <span class="toc-text">顺序表和链表的比较，各自的优缺点。（理解）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A0%86%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-number">3.</span> <span class="toc-text">第三章 堆栈和队列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A0%86%E6%A0%88%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9%E3%80%82%E6%A0%88%E9%A1%B6%E5%92%8C%E6%A0%88%E5%BA%95%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">堆栈的定义和特点。栈顶和栈底相关术语。（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F-%E9%93%BE%E5%BC%8F%E5%A0%86%E6%A0%88%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E5%92%8C%E6%93%8D%E4%BD%9C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">顺序&#x2F;链式堆栈的存储结构和操作实现。（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%9F%E5%88%97%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E7%89%B9%E7%82%B9%E3%80%82%E9%98%9F%E9%A6%96%E5%92%8C%E9%98%9F%E5%B0%BE%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">队列的概念和特点。队首和队尾相关术语。（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F-%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E3%80%81%E9%A1%BA%E5%BA%8F%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">顺序&#x2F;链式队列的存储结构、顺序循环队列的表示和实现。（理解）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A0%86%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%82%EF%BC%88%E5%BA%94%E7%94%A8%EF%BC%89"><span class="toc-number">3.5.</span> <span class="toc-text">堆栈和队列的应用。（应用）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E4%B8%B2"><span class="toc-number">4.</span> <span class="toc-text">第四章 串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B2%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%81%E7%A9%BA%E4%B8%B2%E3%80%81%E7%A9%BA%E6%A0%BC%E4%B8%B2%E3%80%81%E5%AD%90%E4%B8%B2%E3%80%81%E4%B8%BB%E4%B8%B2%E3%80%81%E4%B8%B2%E7%9B%B8%E7%AD%89%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">串的定义、空串、空格串、子串、主串、串相等。（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B2%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">串的基本操作（理解）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E7%BB%84"><span class="toc-number">5.</span> <span class="toc-text">第五章 数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="toc-number">5.1.</span> <span class="toc-text">数组的定义（识记）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6%E3%80%82%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E3%80%81%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E6%8C%89%E8%A1%8C%E5%AD%98%E5%82%A8%E5%8F%8A%E6%8C%89%E5%88%97%E5%AD%98%E5%82%A8%E5%92%8C%E8%AE%A1%E7%AE%97%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%9C%B0%E5%9D%80%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E3%80%82%EF%BC%88%E5%BA%94%E7%94%A8%EF%BC%89"><span class="toc-number">5.2.</span> <span class="toc-text">数组的实现机制。一维数组、二维数组的按行存储及按列存储和计算数组元素的地址计算公式。（应用）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%9F%A9%E9%98%B5%E5%92%8C%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E5%8E%8B%E7%BC%A9%E5%AD%98%E5%82%A8%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">5.3.</span> <span class="toc-text">特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）</span></a></li></ol></li></ol></nav></aside></div><section class="p-ext"><div class="l-pager l-pager-dtl box"><a class="prev" href="/2020/05/01/Datasource2/">&lt; 数据结构考纲识记理解内容（下）</a><a class="next" href="/2019/08/27/os1/">操作系统（一）概论 &gt;</a></div><div id="valine-comment"><style type="text/css">.v * { color: #CECECE; }
-.v a { color: #0F9FB4; }
-.v a:hover { color: #216C73; }
-.v li { list-style: inherit; }
-.v .vwrap { border: 1px solid #223441; border-radius: 0; }
-.v .vwrap:hover { box-shadow: 0 0 6px 1px #223441; }
-.v .vbtn { border-radius: 0; color: #cecece; background: none; }
-.v .vlist .vcard .vh { border-bottom-color: #293D4E; }
-.v .vwrap .vheader .vinput { border-bottom-color: #223441; }
-.v .vwrap .vheader .vinput:focus { border-bottom-color: #339EB4; }
-.v code, .v pre,.v .vlist .vcard .vhead .vsys { background: #203240; }
-.v code, .v pre { color: #F0F0F0; font-size: 95%; }
-.v .vlist .vcard .vcontent.expand:before { background: linear-gradient(180deg,hsla(206,33%,19%,0),hsla(206,33%,19%,.9)); }
-.v .vlist .vcard .vcontent.expand:after { background: hsla(206,33%,19%,.9); }</style><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
-var verify = 'false' == true ? true : false;
-var GUEST_INFO = ['nick','mail','link'];
-var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-  return GUEST_INFO.indexOf(item) > -1
-});
-guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-window.valine = new Valine({
-  el:'#vcomment',
-  notify:notify,
-  verify:verify,
-  appId:'',
-  appKey:'',
-  lang: 'zh-cn',
-  placeholder:'ヾﾉ≧∀≦)o Come on, say something...',
-  avatar:'identicon',
-  guest_info:guest_info,
-  pageSize:'10'
-})</script></div></section><footer><p>Copyright © 2016 - 2020 <a href="/." rel="nofollow">恰恰书库</a> | <strong><a rel="nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></strong><br><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span></span> <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span></span> | Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a>Theme with<a rel="nofollow" target="_blank" href="https://github.com/litreily/snark-hexo"> snark.</a></p></footer></div></div></div><script type="text/javascript" src="/plugins/prettify/prettify.js"></script><script type="text/javascript" src="/js/search.js"></script><script type="text/javascript" src="/js/top.js"></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script>var search_path = 'search.xml';
-if (search_path.length == 0) {
-    search_path = 'search.xml';
-}
-var path = '/' + search_path;
-searchFunc(path, 'local-search-input', 'local-search-result');
-</script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"></body></html>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/DataType/" rel="tag"># DataType</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/08/27/os1/" rel="prev" title="操作系统（一）概论">
+      <i class="fa fa-chevron-left"></i> 操作系统（一）概论
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/01/Datasource2/" rel="next" title="数据结构考纲识记理解内容（下）">
+      数据结构考纲识记理解内容（下） <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E3%80%81%E6%95%B0%E6%8D%AE%E5%85%83%E7%B4%A0%E3%80%81%E6%95%B0%E6%8D%AE%E9%A1%B9%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">数据、数据元素、数据项的基本概念（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E4%B8%89%E7%A7%8D%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E5%92%8C%E4%B8%A4%E7%A7%8D%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">数据结构的三种逻辑结构和两种存储结构表示方法（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%A6%82%E5%BF%B5%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">数据结构和抽象数据类型的概念（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%81%E6%80%A7%E8%B4%A8%E5%92%8C%E7%9B%AE%E6%A0%87%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">算法的概念、性质和目标（识记）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">第二章 线性表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">线性表的定义和抽象数据类型（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%EF%BC%8C%E9%A1%BA%E5%BA%8F%E8%A1%A8%E4%B8%8A%E7%9A%84%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E7%AD%89%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%85%B6%E5%B9%B3%E5%9D%87%E6%97%B6%E9%97%B4%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">线性表的顺序表示和实现。顺序表的定义和存储结构，顺序表上的插入、删除等操作及其平均时间性能分析。（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E5%BC%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%E5%8D%95%E9%93%BE%E8%A1%A8%E3%80%81%E5%BE%AA%E7%8E%AF%E5%8D%95%E9%93%BE%E8%A1%A8%E3%80%81%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E5%92%8C%E6%93%8D%E4%BD%9C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">线性表的链式表示和实现。单链表、循环单链表、双向链表的存储结构和操作实现。（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8%E4%B8%8A%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%BB%BA%E8%A1%A8%E3%80%81%E6%9F%A5%E6%89%BE%E3%80%81%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4%E7%AD%89%E5%9F%BA%E6%9C%AC%E7%AE%97%E6%B3%95%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">2.4.</span> <span class="nav-text">单链表上实现的建表、查找、插入和删除等基本算法。（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83%EF%BC%8C%E5%90%84%E8%87%AA%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">2.5.</span> <span class="nav-text">顺序表和链表的比较，各自的优缺点。（理解）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A0%86%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="nav-number">3.</span> <span class="nav-text">第三章 堆栈和队列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A0%86%E6%A0%88%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9%E3%80%82%E6%A0%88%E9%A1%B6%E5%92%8C%E6%A0%88%E5%BA%95%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">堆栈的定义和特点。栈顶和栈底相关术语。（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F-%E9%93%BE%E5%BC%8F%E5%A0%86%E6%A0%88%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E5%92%8C%E6%93%8D%E4%BD%9C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">3.2.</span> <span class="nav-text">顺序&#x2F;链式堆栈的存储结构和操作实现。（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%98%9F%E5%88%97%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E7%89%B9%E7%82%B9%E3%80%82%E9%98%9F%E9%A6%96%E5%92%8C%E9%98%9F%E5%B0%BE%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">3.3.</span> <span class="nav-text">队列的概念和特点。队首和队尾相关术语。（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F-%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E3%80%81%E9%A1%BA%E5%BA%8F%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">3.4.</span> <span class="nav-text">顺序&#x2F;链式队列的存储结构、顺序循环队列的表示和实现。（理解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A0%86%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%82%EF%BC%88%E5%BA%94%E7%94%A8%EF%BC%89"><span class="nav-number">3.5.</span> <span class="nav-text">堆栈和队列的应用。（应用）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E4%B8%B2"><span class="nav-number">4.</span> <span class="nav-text">第四章 串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%B2%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%81%E7%A9%BA%E4%B8%B2%E3%80%81%E7%A9%BA%E6%A0%BC%E4%B8%B2%E3%80%81%E5%AD%90%E4%B8%B2%E3%80%81%E4%B8%BB%E4%B8%B2%E3%80%81%E4%B8%B2%E7%9B%B8%E7%AD%89%E3%80%82%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">4.1.</span> <span class="nav-text">串的定义、空串、空格串、子串、主串、串相等。（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%B2%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">4.2.</span> <span class="nav-text">串的基本操作（理解）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E7%BB%84"><span class="nav-number">5.</span> <span class="nav-text">第五章 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89%EF%BC%88%E8%AF%86%E8%AE%B0%EF%BC%89"><span class="nav-number">5.1.</span> <span class="nav-text">数组的定义（识记）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6%E3%80%82%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E3%80%81%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E6%8C%89%E8%A1%8C%E5%AD%98%E5%82%A8%E5%8F%8A%E6%8C%89%E5%88%97%E5%AD%98%E5%82%A8%E5%92%8C%E8%AE%A1%E7%AE%97%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%9C%B0%E5%9D%80%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E3%80%82%EF%BC%88%E5%BA%94%E7%94%A8%EF%BC%89"><span class="nav-number">5.2.</span> <span class="nav-text">数组的实现机制。一维数组、二维数组的按行存储及按列存储和计算数组元素的地址计算公式。（应用）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E7%9F%A9%E9%98%B5%E5%92%8C%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E5%8E%8B%E7%BC%A9%E5%AD%98%E5%82%A8%E3%80%82%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">5.3.</span> <span class="nav-text">特殊矩阵和稀疏矩阵的概念及其压缩存储。（理解）</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Soya</p>
+  <div class="site-description" itemprop="description">联系唯一邮箱：soya-kelaos@outlook.com</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/soya2" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;soya2" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/soooooya2" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;soooooya2" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Soya</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
