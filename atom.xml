@@ -6,7 +6,7 @@
   <link href="soya2.github.io/atom.xml" rel="self"/>
   
   <link href="soya2.github.io/"/>
-  <updated>2020-08-26T09:25:25.757Z</updated>
+  <updated>2020-09-03T08:38:19.629Z</updated>
   <id>soya2.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="soya2.github.io/2020/08/26/SQL_Note/"/>
     <id>soya2.github.io/2020/08/26/SQL_Note/</id>
     <published>2020-08-26T07:22:58.000Z</published>
-    <updated>2020-08-26T09:25:25.757Z</updated>
+    <updated>2020-09-03T08:38:19.629Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;SQL常用命令&quot;&gt;&lt;a href=&quot;#SQL常用命令&quot; class=&quot;headerlink&quot; title=&quot;SQL常用命令&quot;&gt;&lt;/a&gt;SQL常用命令&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;code&gt;mysql -u[用户名]</summary>
+    <summary type="html">&lt;h2 id=&quot;SQL常用命令即库操作&quot;&gt;&lt;a href=&quot;#SQL常用命令即库操作&quot; class=&quot;headerlink&quot; title=&quot;SQL常用命令即库操作&quot;&gt;&lt;/a&gt;SQL常用命令即库操作&lt;/h2&gt;&lt;p&gt;在终端中输入&lt;code&gt;mysql -u[用户名]</summary>
         
       
     
@@ -44,7 +44,7 @@
     <link href="soya2.github.io/2020/06/26/NiHonGo/"/>
     <id>soya2.github.io/2020/06/26/NiHonGo/</id>
     <published>2020-06-26T15:14:08.000Z</published>
-    <updated>2020-08-29T13:52:46.903Z</updated>
+    <updated>2020-07-07T08:08:16.000Z</updated>
     
     
       
@@ -58,7 +58,7 @@
     
     
     
-    <category term="NiHonGo" scheme="soya2.github.io/tags/NiHonGo/"/>
+    <category term="日语" scheme="soya2.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
